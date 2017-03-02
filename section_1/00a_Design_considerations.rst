@@ -19,7 +19,7 @@ Why are big domes important? Because a rough rule of thumb is that the largest o
 
 3. Finally, RGB LED strips create "white" light by turning on the red, green and blue LEDs simultaneously. While it looks "white" based on appearance, it's not a very good white. Here's a "white" spectrum from an RGB LED:
 
-.. figure:: ../figures/rgb_led_white_spectrum.png
+.. figure:: ./figures/rgb_led_white_spectrum.png
    :align: middle
    :alt: "white" spectrum from an RGB LED
    
@@ -27,7 +27,7 @@ Why are big domes important? Because a rough rule of thumb is that the largest o
 
 The LEDs I wound up using for my RTI systems are Cree 3W/1A neutral white star LEDs. Here's a spectrum from a neutral white Cree LED (the green line), like the ones I spec for my system:
 
-.. figure:: ../figures/neutral_white_led_spectrum.png
+.. figure:: ./figures/neutral_white_led_spectrum.png
    :align: middle
    :alt: spectrum from a neutral white Cree LED (the green line)
    
@@ -37,7 +37,7 @@ Much more balanced and uniform over the visible spectrum, with a peak near the b
 
 Next issue is how to control a large number of high-current LEDs from an Arduino Mega. While in principle there are likely enough outputs from a Mega to control a fair number of LEDs individually, in practice that would make the circuit design and the wiring a nightmare. The obvious solutions was to use a LED matrix design, with 8 rows x 8 columns for a maximum of 64 LEDs.
 
-.. figure:: ../figures/led_matrix_design_8x8.png
+.. figure:: ./figures/led_matrix_design_8x8.png
    :align: middle
    :scale: 60%
    :alt: LED matrix design
@@ -50,7 +50,7 @@ Running sequentially through rows and columns, every light can be turned on just
 
 Solving the next problem, getting accurate control of LED currents up to 1A, requires circuitry on both the high and low sides of the LED. Here's the solution I came up with:
 
-.. figure:: ../figures/led_circuitry.png
+.. figure:: ./figures/led_circuitry.png
    :align: middle
    :scale: 60%
    :alt: LED circuitry
@@ -63,7 +63,7 @@ The P-Channel MOSFET controls on/off for the LED power supply, shown as +12V, bu
 
 Below is a better schematic of the high-side driver from the first site linked above; the "Load" in this case is an LED, and there's no need for a flyback protection diode (commonly used with inductive loads like motors or relays). I use IRF9540 P-Channel MOSFETs because they're cheap, and work fine, but an FQP27P06, FQ47P06, or NDP6020P P-Channel MOSFET would work just as well. You just need a P-channel MOSFET that can handle high currents, and has a low Rds.
 
-.. figure:: ../figures/high_side_schematic.png
+.. figure:: ./figures/high_side_schematic.png
    :align: middle
    :scale: 60%
    :alt: schematic of the high-side driver
@@ -78,7 +78,7 @@ The schematic shows one high-side and one low-side driver, connected to one LED.
 
 Just for laughs, here's the inside of my original controller box from 2013, using a Darlington array:
 
-.. figure:: ../figures/original_controller_box.png
+.. figure:: ./figures/original_controller_box.png
    :align: middle
    :scale: 30%
    :alt: original controller box from 2013
@@ -87,7 +87,7 @@ Just for laughs, here's the inside of my original controller box from 2013, usin
 
 And here's the most recent version I've built, the prototype for the system I'm describing on these project pages:
 
-.. figure:: ../figures/latest_controller_box.png
+.. figure:: ./figures/latest_controller_box.png
    :align: middle
    :scale: 30%
    :alt: original controller box from 2013
