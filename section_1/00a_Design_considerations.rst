@@ -5,9 +5,15 @@ This is just a quick explanation of how I came up with the basic LED lighting an
 
 I first started working on this project early in 2013. I needed a control system that could turn on a large series of individual LEDs in sequence. I knew the control system would be driven by an Arduino, since the control requirements were pretty basic - turn lights on and off, fire a camera shutter in sync with the lights. `A post on the Hackaday blog`_ linked to `a previous blog post`_ on my project, and one comment in particular struck me. The author said that my project was "not much more than some LEDs mounted to a camera", and that he could build a comparable system for less than $100. I had to smile - I used virtually the same words to a friend of mine three-and-a-half years ago when I started working on the idea, including that exact dollar amount. Turns out that there's a whole lot of complications that you don't think about until you actually start working on a project like this.
 
-The main idea the author had was that you could use `inexpensive addressable RGB LED strips like this one`_ to simplify the whole process of controlling the lighting, as well as cutting the cost. Nice idea, but three big problems that aren't immediately obvious :
+The main idea the author had was that you could use `inexpensive addressable RGB LED strips like this one`_ to simplify the whole process of controlling the lighting, as well as cutting the cost. Nice idea, but three big problems that aren't immediately obvious.
 
-1. The LEDs on these 1-meter strips use 60 mA of current each (3.5 A strip total / 60 LEDs). I spent a lot of time figuring out how powerful the LEDs needed to be in order to light up a system up to a meter in diameter. My first thought was to power LEDs individually from Arduino Mega outputs, which limited me to 30 mA current (spec max is 40 mA, but it's recommended you stay away from that if possible). I tried "superbright" LEDs, in both straw-hat variety (wide uniform light dispersion), and focused (bright in the center, but narrow non-uniform beam). The straw-hats simply didn't have enough light intensity for reasonable camera exposure times even with smaller domes, a minimum of several seconds. The focused LEDs resulted in reasonable exposure times, but the small size of the lit area and its non-uniformity made them an unacceptable choice. Based on my initial experiments, I calculated that I needed at least 100 mA of current for reasonable exposure times for large domes with wide dispersion LEDs, and bought 0.5 W straw-hat LEDs for that.
+The three big problems
+----------------------
+
+LED strips
+^^^^^^^^^^
+
+The LEDs on these 1-meter strips use 60 mA of current each (3.5 A strip total / 60 LEDs). I spent a lot of time figuring out how powerful the LEDs needed to be in order to light up a system up to a meter in diameter. My first thought was to power LEDs individually from Arduino Mega outputs, which limited me to 30 mA current (spec max is 40 mA, but it's recommended you stay away from that if possible). I tried "superbright" LEDs, in both straw-hat variety (wide uniform light dispersion), and focused (bright in the center, but narrow non-uniform beam). The straw-hats simply didn't have enough light intensity for reasonable camera exposure times even with smaller domes, a minimum of several seconds. The focused LEDs resulted in reasonable exposure times, but the small size of the lit area and its non-uniformity made them an unacceptable choice. Based on my initial experiments, I calculated that I needed at least 100 mA of current for reasonable exposure times for large domes with wide dispersion LEDs, and bought 0.5 W straw-hat LEDs for that.
 
 Turns out I was optimistic, and the exposure times for the first dome I built (18" diameter) were on the order of a second or more, which translates to more than 4 seconds for larger domes. And this was with the lowest f-stop I had; dropping the f-stop to improve depth of field could increase exposure time by a factor of 4 or more. An upgrade to 350 mA / 1W LEDs brought that exposure time to about 1/2 a second, which would translate to 2 seconds for a larger dome, but still not good enough. That's why I ultimately went to my current design, which supports 1 A / 3W LEDs, and could in principle be modified to double that. 60 mA LEDs just don’t produce enough light for reasonable exposure times.
 
@@ -15,9 +21,15 @@ A `recent paper by Tom Kinsman`_ had similar results. He built his own independe
 
 Why are big domes important? Because a rough rule of thumb is that the largest object you can accurately image with Reflectance Transformation Imaging is half the distance to the light source you're using. So for a 12" dome, 6" radius, that's 3". I think this is conservative, and you can do a bit bigger, but there's still a limit. Larger domes allow for accurate imaging of larger objects - a one-meter-diameter dome can image an object about 10" in size.
 
-2. When I was testing the 30 mA LEDs, I found that the variation in light intensity between different LEDs was as much as 20%. Reflectance Transformation Imaging requires that the light sources be as close to the same intensity as possible, otherwise the final result may be an inaccurate fitting of the light curve. I wasn't sure about the reason, but a bit of research brought up the most logical answer. While LEDs are sold with a quoted forward voltage for a specific current, what you actually get from a bunch of LEDs is a spread of forward voltages centered around the specification. Given how steep an LED I vs. V curve can be, a small change in Vf can result in big changes in the current, and big changes in the light intensity (see Grumpy Mike's `excellent discussion of these issues`_). The current-limiting resistor commonly used with low-current LEDs is there to drop the voltage across the LED so that you don't burn it out, and not to specifically control the exact current. Given the low cost of the LED strip, I have to believe that it uses resistors to limit current to the LEDs, which could translate into substantial differences in output power between different LEDs. Not acceptable. My systems have always used adjustable constant current regulators to get around this problem.
+Light intensity
+^^^^^^^^^^^^^^^
 
-3. Finally, RGB LED strips create "white" light by turning on the red, green and blue LEDs simultaneously. While it looks "white" based on appearance, it's not a very good white. Here's a "white" spectrum from an RGB LED:
+When I was testing the 30 mA LEDs, I found that the variation in light intensity between different LEDs was as much as 20%. Reflectance Transformation Imaging requires that the light sources be as close to the same intensity as possible, otherwise the final result may be an inaccurate fitting of the light curve. I wasn't sure about the reason, but a bit of research brought up the most logical answer. While LEDs are sold with a quoted forward voltage for a specific current, what you actually get from a bunch of LEDs is a spread of forward voltages centered around the specification. Given how steep an LED I vs. V curve can be, a small change in Vf can result in big changes in the current, and big changes in the light intensity (see Grumpy Mike's `excellent discussion of these issues`_). The current-limiting resistor commonly used with low-current LEDs is there to drop the voltage across the LED so that you don't burn it out, and not to specifically control the exact current. Given the low cost of the LED strip, I have to believe that it uses resistors to limit current to the LEDs, which could translate into substantial differences in output power between different LEDs. Not acceptable. My systems have always used adjustable constant current regulators to get around this problem.
+
+Spectrum
+^^^^^^^^
+
+Finally, RGB LED strips create "white" light by turning on the red, green and blue LEDs simultaneously. While it looks "white" based on appearance, it's not a very good white. Here's a "white" spectrum from an RGB LED:
 
 .. figure:: ./figures/rgb_led_white_spectrum.png
    :align: middle
@@ -34,6 +46,9 @@ The LEDs I wound up using for my RTI systems are Cree 3W/1A neutral white star L
    Spectrum from a neutral white Cree LED (the green line).
 
 Much more balanced and uniform over the visible spectrum, with a peak near the blue end. This is easier to color correct than the RGB "white" spectrum. What’s more, Cree LEDs are “binned” to have color rendering indices (CRI) that are close to each other; cheap super-bright LEDs can have large differences in CRI in the same batch
+
+Control a swarm of LEDs
+-----------------------
 
 Next issue is how to control a large number of high-current LEDs from an Arduino Mega. While in principle there are likely enough outputs from a Mega to control a fair number of LEDs individually, in practice that would make the circuit design and the wiring a nightmare. The obvious solutions was to use a LED matrix design, with 8 rows x 8 columns for a maximum of 64 LEDs.
 
