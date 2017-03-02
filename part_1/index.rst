@@ -6,7 +6,7 @@ Affordable Reflectance Transformation Imaging Dome
    :caption: Contents:
    :numbered:
    
-   section_1/00a_Design_considerations.rst
+   sections/00a_Design_considerations.rst
 
 Indices and tables
 ==================
