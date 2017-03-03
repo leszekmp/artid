@@ -93,7 +93,7 @@ The schematic shows one high-side and one low-side driver, connected to one LED.
 
 Just for laughs, here's the inside of my original controller box from 2013, using a Darlington array:
 
-.. figure:: ../figures/original_controller_box.png
+.. figure:: ../figures/original_controller_box.jpg
    :align: center
    :scale: 30%
    :alt: original controller box from 2013
@@ -102,7 +102,7 @@ Just for laughs, here's the inside of my original controller box from 2013, usin
 
 And here's the most recent version I've built, the prototype for the system I'm describing on these project pages:
 
-.. figure:: ../figures/latest_controller_box.png
+.. figure:: ../figures/latest_controller_box.jpg
    :align: center
    :scale: 30%
    :alt: original controller box from 2013
