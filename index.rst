@@ -7,6 +7,7 @@ Affordable Reflectance Transformation Imaging Dome
    :numbered:
    
    sections/01_marking_the_dome.rst
+   sections/02_MOSFET_driver_shield.rst
 
 Indices and tables
 ==================
