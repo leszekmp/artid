@@ -19,7 +19,7 @@ When construction is completed, and all the LEDs installed, the inside of the do
 
 .. figure:: ../figures/dome_interior_48_led.jpg
    :align: center
-   :scale: 50%
+   :scale: 70%
    
    Interior of 12" diameter dome, with 48 LEDs
 
@@ -86,6 +86,7 @@ Now take the dome and rotate it in the traced circle until one of the initial ma
 
 .. figure:: ../figures/dome_flange_marks_2.jpg
    :align: center
+   :scale: 50%
    
    Second set of marks spaced at 45 degrees, located between first set of marks
 

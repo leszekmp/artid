@@ -317,6 +317,7 @@ The easiest way to make the connection between the MOSFET at lower left and the 
    :scale: 30%
 
 So that they come close to the soldered female headers (on the back side of the shield board):
+
 .. figure:: ../figures/mosfet_44.jpg
    :align: center
    :scale: 30%   
