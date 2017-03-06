@@ -94,7 +94,10 @@ Determine the heights of the rows, and mark the LED positions on the dome
 
 Using standard RTI guidelines, the lowest angle the LEDs should be mounted is at 15 degrees above the plane of the ground; below this lighting angle, the object you're photographing may be too dim. The highest angle should be somewhere around 65-75 degrees; above this, the LED lighting angle may make the object too bright. With your desired top and bottom angles, the number of LED rows you'll be installing, and the size of the dome, you can figure out the proper spacing on the rows.
 
-Example 1: My big dome (18" dome diameter, 8 rows of 8 LEDs, 16 through 72 degrees). With 8 rows, there will be 7 angular gaps between the rows (8-1). The total angular distance between the low and high rows will be 72-16 = 56 degrees. The angular distance between individual rows will be 56/7=8 degrees. So there will be rows at the following angular positions (where bottom = 0 degrees):
+Example 1
+^^^^^^^^^
+
+My big dome (18" dome diameter, 8 rows of 8 LEDs, 16 through 72 degrees). With 8 rows, there will be 7 angular gaps between the rows (8-1). The total angular distance between the low and high rows will be 72-16 = 56 degrees. The angular distance between individual rows will be 56/7=8 degrees. So there will be rows at the following angular positions (where bottom = 0 degrees):
 
 .. hlist::
    :columns: 3
@@ -133,19 +136,17 @@ Set 1 Set 2
 10.0" 11.3"
 ===== =====
 
-Example 2: The small dome (12" dome diameter (the size of the dome I'm building here), 6 rows of 8 LEDs, 15 through 65 degrees).
+Example 2
+^^^^^^^^^
 
-Angular distance between high & low = 65 - 15 = 50.
+The small dome (12" dome diameter (the size of the dome I'm building here), 6 rows of 8 LEDs, 15 through 65 degrees).
 
-Angular distance between individual rows = High & Low / (# rows -1) = 50 / (6-1) = 10 degrees between rows.
-
-Row angles = 15, 25, 35, 45, 55, 65.
-
-1/4 circumference = 12" x pi/4 = 9.4"
-
-Row distances (from bottom) = 1.6", 2.6", 3.7", 4.7", 5.7", 6.8"
-
-Row distances paired by column alignment = 1.6", 3.7", 5.7" and 2.6", 4.7", 6.8"
+* Angular distance between high & low = 65 - 15 = 50.
+* Angular distance between individual rows = High & Low / (# rows -1) = 50 / (6-1) = 10 degrees between rows.
+* Row angles = 15, 25, 35, 45, 55, 65.
+* 1/4 circumference = 12" x pi/4 = 9.4"
+* Row distances (from bottom) = 1.6", 2.6", 3.7", 4.7", 5.7", 6.8"
+* Row distances paired by column alignment = 1.6", 3.7", 5.7" and 2.6", 4.7", 6.8"
 
 .. warning::
    
@@ -200,8 +201,10 @@ Just recently, I stumbled across another option for painting the interiors of th
 1. Make sure interior of dome is clean and dust-free; use soap and water if necessary, then dry completely. Instructions suggest lightly sanding the inside; that's not really necessary for spray painting, as long as the surface is clean, but is probably a good idea for chalkboard paint.
 2. Cover the outside of dome with masking tape to protect it from stray sprayed or brushed paint. Pay special attention to the hole at the top, as that's the most likely place for paint to leak through.
 3. Follow instructions on paint can. 
+
    a. For spray paint, apply paint to inside of dome in steady back-and-forth motion, overlapping strokes. Not too heavy, or you will get drips/runs inside the dome. You will almost certainly have to apply more than one coat to achieve full light blockage. Allow the first coat to dry for a few minutes, then apply a second coat. I'd even recommend a third coat if you have enough paint left. Let the final coat dry to the touch, then remove the masking tape from the outside. Hold the dome up to a bright light source (the sun works great for this), and check to see if you've put on enough paint to block all the light. If not, re-mask and put on another coat. The Rustoleum instructions say you should put successive coats down less than one hour before applying the previous coat, or after 48 hours.
    b. For chalkboard paint, follow can instructions. If one coat isn’t sufficient, you can apply a second coat 4 hours later.
+   
 4. Set the dome aside to dry. The instructions on the Rustoleum can say that it takes 5-7 days for the paint to fully bond with the plastic, but don't worry too much about that - you can work with the dome in a day or two if you need to, since you won't be putting any stress on the paint. Same thing with the chalkboard paint. But I'm putting these instructions first so that you can let the paint dry longer while you're working on the rest of the project.
 
 That's it. Hopefully, you will see the LED position marks you created in Step C, like these drilled dimples in my dome, visible after painting:
