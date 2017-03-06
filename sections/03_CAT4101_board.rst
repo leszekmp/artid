@@ -1,5 +1,11 @@
+CAT4101 board
+=============
 
+This board controls the “low side” (ground connection) for the LED matrix.
 
+Most of the components used for building the RTI controller are "through-the-hole", which means that they can be installed and soldered onto a standard protoboard/shield with 0.1" spacing between holes (2.54 mm). These are a lot easier to install and solder than the other common option, "surface mount devices" (SMD). The latter are designed for easier mechanical placement and bulk automated soldering. You supposedly can hand-solder SMD devices, but I am apparently too incompetent to do this well.
+
+Unfortunately, there is one set of RTI controller components that is only available in SMD format - the CAT4101 LED drivers. Here's a pic of a standard MOSFET transistor on the left with 0.1" lead spacing, and a CAT4101 on the right; note the difference in lead spacing:
 
 .. figure:: ../figures/cat4101_board_01.jpg
    :align: center
