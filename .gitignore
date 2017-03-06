@@ -30,6 +30,7 @@ $RECYCLE.BIN/
 
 # Thumbnails
 ._*
+.Bridge*
 
 # Files that might appear in the root of a volume
 .DocumentRevisions-V100
