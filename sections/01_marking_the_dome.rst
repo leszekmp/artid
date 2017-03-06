@@ -96,29 +96,31 @@ Using standard RTI guidelines, the lowest angle the LEDs should be mounted is at
 
 Example 1: My big dome (18" dome diameter, 8 rows of 8 LEDs, 16 through 72 degrees). With 8 rows, there will be 7 angular gaps between the rows (8-1). The total angular distance between the low and high rows will be 72-16 = 56 degrees. The angular distance between individual rows will be 56/7=8 degrees. So there will be rows at the following angular positions (where bottom = 0 degrees):
 
-==
-16
-24
-32
-40
-48
-56
-64
-72
-==
+.. hlist::
+   :columns: 3
+
+   * 16
+   * 24
+   * 32
+   * 40
+   * 48
+   * 56
+   * 64
+   * 72
 
 To figure out the true arc distance up the side of the dome these angles correspond to, divide the angle by 90, then multiply by 1/4 the circumference of the dome. For an 18" diameter, the circumference is 18" x pi, or about 56.4"; 1/4 of that is 14.1". Divide the table above by 90 and multiply by 14.1", and you get (after rounding):
 
-=====
-2.5"
-3.8"
-5.0"
-6.3"
-7.5"
-8.8"
-10.0"
-11.3"
-=====
+.. hlist::
+   :columns: 3
+
+   * 2.5"
+   * 3.8"
+   * 5.0"
+   * 6.3"
+   * 7.5"
+   * 8.8"
+   * 10.0"
+   * 11.3"
 
 So these are the row distances above the base of the dome/flange junction. But the columns in adjacent rows will be shifted by half the angular spacing, so you should group the heights into two staggered sets of rows (each set has LED columns aligned with each other):
 
