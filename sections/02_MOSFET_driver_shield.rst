@@ -213,3 +213,245 @@ Here's a side shot:
 .. figure:: ../figures/mosfet_30.jpg
    :align: center
    :scale: 30%
+   
+And the view from below, showing the two pins soldered to the shield, to hold the pin strip in place. Continue soldering all the pins to the holes they’re in.
+
+.. figure:: ../figures/mosfet_31.jpg
+   :align: center
+   :scale: 30%
+
+Now comes one of the toughest sections of work on the whole project - wiring up the connections on the MOSFET driver shield. It's not too hard, but it is a bit tedious. A few pieces of advice:
+
+1. Work slowly and carefully.
+2. Make sure you're wiring up the right connections, i.e. connecting the wires to the proper component parts. A mistake here shouldn't be fatal, but it would be a huge pain to repair (believe me, I know :-/).
+3. Make solid solder joints that only connect the right parts. Watch out for solder "bridges", where a bit of solder connects two leads/components that shouldn't be connected. Also watch out for loose trimmed leads that could lead to shorts.
+4. Inspect your solder joints when done with a magnifier to make sure they're good.
+5. Don't make your wires "just fit" - add some slack so that you can re-arrange them later on. As you'll see in a few steps, I didn't do that, and I wound up with a couple of spots where the wires blocked some holes where I wanted to solder a wire, and I didn't have enough slack to move the wires to free up the holes. I had to modify my wiring configuration on the fly to make up for that, and given the limited space I had to work with, that was not fun.
+
+
+.. note::
+   
+   In schematic wiring drawings, the wire lines are drawn from one hole on the shield to another. The wires connecting these holes should have the insulation stripped from their ends, and have the bare lead inserted into the hole. The bare lead should then be connected to the specified nearest component/connector lead.
+
+
+First set of wiring will be to connect the base of the npn transistor (the central lead of the D-shaped thingies) to the 10K resistors on the side of the board; these will control turning on/off the main p-channel MOSFETs that run to the positive (high) leads of the LEDs. The numbers next to the resistors are the LED column they control, and need to be connected via wires to the npn transistor next to the correspondingly-numbered MOSFETs:
+
+.. figure:: ../figures/mosfet_32.jpg
+   :align: center
+   :scale: 30%   
+
+Here's my recommended wiring layout, with one end of the wire to be soldered to the resistor, and the other soldered to the central lead of the transistor:
+
+.. figure:: ../figures/mosfet_33.jpg
+   :align: center
+   :scale: 30%
+ 
+You'll notice that there are no wires coming from resistors 1 and 5 to their corresponding transistors. That's because in step 2, we left the resistor leads untrimmed for those two resistors, and we can now attach them directly to the nearby transistors using those leads on the underside of the board. Just bend them down to make contact with the central npn transistor lead, as shown below:
+
+.. figure:: ../figures/mosfet_34.jpg
+   :align: center
+   :scale: 30%
+
+Now solder the connections; trim off the excess lead when done:
+
+.. figure:: ../figures/mosfet_35.jpg
+   :align: center
+   :scale: 30%   
+
+I usually play it safe now by blocking the hole next to resistors 1 and 5 with a bit of solder, to make sure I don't accidentally put a wire into those holes (which I have done; multiple times :-/).
+
+Now follow the wiring diagram above, and connect the remaining resistors to the matching transistors with the 24 AWG Kynar wire. When the connection is soldered, trim off the excess leads. Once you're done, it should look something like this from above:
+
+.. figure:: ../figures/mosfet_36.jpg
+   :align: center
+   :scale: 30%
+
+And this from below:
+
+.. figure:: ../figures/mosfet_37.jpg
+   :align: center
+   :scale: 30%
+
+Next step is to connect the drains of the MOSFETs (their center leads) to the central 8-pin connector; there will ultimately be a header that plugs into this connector, connecting the output of the P-Channel MOSFETs to the LEDs.
+
+As you’ll see in succeeding steps, I didn’t do a very good job on the wiring. Two big fails on my part: I didn't give the wires enough slack, and I kept bending them flat against the board to take up less space and look neater. As a result, access to some of the holes on the shield became very difficult, and I wound up having to use a number of workarounds to finish the wiring. And all for no good reason - wire is cheap, and since all the electronics will sit inside an enclosure with lots of room, it doesn't matter how neat it looks (no one will see it), or how much space I saved (there'll be plenty of space to spare). So use the following as a general guide, but be generous with the wire, and don't bend the wires flat to the board like I did unless you absolutely have to. And don't think you have to follow the wiring layout exactly as I give it - as long as the wires are soldered to the correct leads, they will work (you'll see an example of this shortly).
+
+So here's a pic with the MOSFETs numbered, and the matching pins on the central connector numbered:
+
+.. figure:: ../figures/mosfet_38.jpg
+   :align: center
+   :scale: 30%   
+
+You want to connect the central drain lead on the MOSFETs to the corresponding pin on the central connector:
+
+.. figure:: ../figures/mosfet_39.jpg
+   :align: center
+   :scale: 30%
+
+Here's how it looks after the drain wiring was completed:
+
+.. figure:: ../figures/mosfet_40.jpg
+   :align: center
+   :scale: 30%
+
+Most of the wires were connected per the wiring plan above, but you will notice that the wire for MOSFET 8 (lower left) does not go into the hole in the wiring plan; there was another wire from a previous step that interfered with it. So I had to move that wire to the hole on the opposite side of the connector, but since I soldered it to the correct pin, it will work fine.
+
+Here's a view of the bottom of the board after this wiring step:
+
+.. figure:: ../figures/mosfet_41.jpg
+   :align: center
+   :scale: 30%   
+
+You can clip off the central drain lead of the MOSFET now to free up some room (that's the MOSFET leads you soldered the wires to in this step). You may need that room to maneuver in - there are still two more sets of wires to solder in place.
+
+Next step is to wire all the source leads on the MOSFETs together (the right lead when you're looking straight on at it), and also connect them electrically to the 2-pin female header on the lower left side of the board (which will be connected to the positive lead of the power supply):
+
+.. figure:: ../figures/mosfet_42.jpg
+   :align: center
+   :scale: 30%
+   
+The easiest way to make the connection between the MOSFET at lower left and the female header is to bend the source leads of the lower left MOSFET:
+
+.. figure:: ../figures/mosfet_43.jpg
+   :align: center
+   :scale: 30%
+
+So that they come close to the soldered female headers (on the back side of the shield board):
+.. figure:: ../figures/mosfet_44.jpg
+   :align: center
+   :scale: 30%   
+
+Then glob solder between that bent lead and the solder blob for the headers to connect them electrically:
+
+.. figure:: ../figures/mosfet_45.jpg
+   :align: center
+   :scale: 30%
+   
+For the rest of the source connections, just wire jumpers between MOSFET connections in the same row:
+
+.. figure:: ../figures/mosfet_46.jpg
+   :align: center
+   :scale: 30%
+
+So here's how my board looked after I wired the source jumpers:
+
+.. figure:: ../figures/mosfet_47.jpg
+   :align: center
+   :scale: 30%   
+
+Notice anything missing? Yup, there's two jumpers missing from the shield, on the bottom row. As I mentioned earlier, I pressed the wires flat, and didn't leave enough slack, so I wound up with a situation where I didn't have enough room to get access to the holes from the top. I wound up soldering jumper wires between the MOSFET source leads on the bottom of the board (circled below):
+
+.. figure:: ../figures/mosfet_48.jpg
+   :align: center
+   :scale: 30%
+   
+This works, but it's not very neat. What's more, I made the jumper connection on the right in the above picture too short, and blocked one of the last solder connections I'll need to make in the next step. Once again, I emphasize - leave yourself lots of slack in the wires so that you can move them out of the way if necessary for subsequent wiring/soldering steps.
+
+Because I removed one of the two-pin female headers, I also had to add a jumper from the remaining two-pin header on the left to the source pin of the top left MOSFET; the wiring connection is paralleled with the red line:
+
+.. figure:: ../figures/mosfet_49.jpg
+   :align: center
+   :scale: 30%
+
+And here’s how those connections look like on the bottom (solder points for the jumper are circled in red):
+
+.. figure:: ../figures/mosfet_50.jpg
+   :align: center
+   :scale: 30%   
+
+Last step in the MOSFET driver shield board construction is to connect all the emitter lead on the npn transistors to ground. The npn transistors are the small D-shaped transistors, and the emitter is the lead furthest to the right when looking head on:
+
+.. figure:: ../figures/mosfet_51.jpg
+   :align: center
+   :scale: 100%
+
+The best way to minimize the amount of wiring on the board (which is already crazy with wiring) is to connect the emitter lead closest to the ground connection header to that header:
+
+.. figure:: ../figures/mosfet_52.jpg
+   :align: center
+   :scale: 30%
+
+Then use jumper wires to connect all the remaining emitter leads to each other. Because of the limited space on top (thanks to my poor wire management skills), I didn't think there was room on top to do this, so I did the emitter ground wiring on the bottom. First I bent the emitter lead to make contact with the ground header solder blob, and then attached a jumper wire to that junction:
+
+.. figure:: ../figures/mosfet_53.jpg
+   :align: center
+   :scale: 30%   
+
+I then soldered that connection so that the emitter lead, jumper wire end, and ground header solder blob were all electrically connected, and starting adding successive jumper wires to connect additional emitter leads (taking care to make sure they didn't short out any other connections):
+
+.. figure:: ../figures/mosfet_54.jpg
+   :align: center
+   :scale: 30%
+   
+When all the jumper wires were in place, they were soldered to connect them to the emitters (though you can just as well solder them one at a time):
+
+.. figure:: ../figures/mosfet_55.jpg
+   :align: center
+   :scale: 30%
+
+I've highlighted all the jumper wires with an adjacent red line, so that you can see exactly where they go.
+
+Once you're done with soldering the emitters, you should cut all the protruding leads (transistors, wires, whatever) as flush as you can without affecting the soldered connections.
+
+You're now done with the toughest system assembly steps, tough because of the tight space limitations. There's more wiring /soldering coming up, but it should be easier, as you'll have a lot more room to work with.
+
+In the past, I've always assumed that I've wired the MOSFET driver shield correctly, and that's usually been the case (with a few minor shorts due to stray clipped leads). But for these instructions, I came up with a fairly simple way to test all 8 driver circuits on the driver board, to make sure they work correctly.
+
+You will need:
+
+1. Arduino Mega and wall wart power supply
+2. Multimeter with either alligator clip leads, or separate alligator clip leads
+3. One female Dupont pin
+4. Jumper wires. I use breadboard connectors, but you can cut a few wire segments from the 22 AWG wire on the parts list (just save it when you're done).
+5. The driver shield you've just finished assembling.
+
+Here are all the parts in a neat assemblage:
+
+.. figure:: ../figures/mosfet_56.jpg
+   :align: center
+   :scale: 30%   
+
+The Arduino will only be used for supplying +5V and ground, nothing more. So you'll connect one wire to a +5V connection on the Arduino, and the other to a ground connection:
+
+.. figure:: ../figures/mosfet_57.jpg
+   :align: center
+   :scale: 30%
+   
+Note that the power supply isn't connected yet - I save that until all the wiring connections are done. I'm using standard breadboard jumper wires here, red for +5V and blue for ground, but you can use sections of 22 AWG wire. These wires should now be connected to the driver board, along with the remaining jumpers.
+
+Because I removed the top left header, there’s no red jumper between the two headers as seen in the photo, and you should plug the white wire equivalent into the open socket in the lower left header:
+
+.. figure:: ../figures/mosfet_58.jpg
+   :align: center
+   :scale: 30%
+
+Here's an annotated connection pic:
+
+.. figure:: ../figures/mosfet_59.jpg
+   :align: center
+   :scale: 30%   
+
+The idea is that when the white wire (at +5V) isn't touching any of the 10K resistor connections on the right, there's no voltage across the multimeter. When you touch the white wire to one of the resistors, you switch on the npn transistor, which "effectively" turns on the MOSFET transistor (technically, you're unbiasing the p-channel MOSFET gate, which turns it on). You should then see 5V on the multimeter, which is measuring the output voltage from the MOSFET driver. In the pic above, the red (+V) multimeter lead is connected to the #1 MOSFET output driver connection, while the blue multimeter lead is connected to ground.
+
+I tried connecting the multimeter lead directly to the output pins in the center, but the spacing is too close. So I took a female Dupont header pin, spread the clamps apart, then clipped it to an alligator clip:
+
+.. figure:: ../figures/mosfet_60.jpg
+   :align: center
+   :scale: 30%
+
+The female Dupont header slides easily onto each of the 8 pins on the output connector, so that you can test all 8 circuits sequentially.
+
+Plug in the Arduino to the power supply now. Here's a pic of me testing MOSFET drive transistor 1 by holding the white bias wire to the end of the top 10K resistor; the red multimeter lead is connected to pin 1 (the top pin) of the 8-pin male connector in the center using the Dupont female header. You'll see that the multimeter, set at the 20V DC scale, shows about 5V when the connection is made, and should show zero when there's no connection:
+
+.. figure:: ../figures/mosfet_61.jpg
+   :align: center
+   :scale: 30%
+
+Now I connect the multimeter red lead to the 2nd pin down, corresponding to MOSFET driver 2, and do the same test by touching the second resistor down:
+
+.. figure:: ../figures/mosfet_62.jpg
+   :align: center
+   :scale: 30%   
+
+You should only see 5V on the multimeter when the white wire is touching the resistor that corresponds to the output pin. It's worth testing this by touching every resistor when you have the red multimeter lead connected to a single output pin - only when the resistor that corresponds to that output pin is touched should you see 5V on the multimeter. If you see voltage on more than one resistor, you have a wiring problem (electrical short, wrong connection, etc.), and you'll have to double-check your work to find out where you went wrong. But hopefully, everything will work fine (as it did for me in this case). Repeat the process for all 8 output pins. Once you're done testing, set the driver shield assembly aside somewhere - you won't need it for a while.
+
