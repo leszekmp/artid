@@ -126,26 +126,39 @@ Heat sinks (7mm x 7mm to 10mm x 10mm)
 `Black Kynar insulated 24 AWG solid wire <http://www.digikey.com/product-detail/en/R24BLK-0100/K516-ND/806199>`_
   The main wire for connecting LEDs inside the dome, and protoboard interconnections. One 100-foot roll is probably enough for domes up to 24" in diameter; larger domes may require a second roll.
   
-`The next set of parts is for the enclosure that will hold the electronics, and into which will be installed switches, pots, LEDs, panel jacks, etc. Feel free to design and construct your own, using my model as an example.
-`
-`Plastic enclosure box <>`_
+The next set of parts is for the enclosure that will hold the electronics, and into which will be installed switches, pots, LEDs, panel jacks, etc. Feel free to design and construct your own, using my model as an example.
+
+`Plastic enclosure box <http://www.polycase.com/dc-96p>`_
   This was the only pre-made one I could find that was big enough to hold everything. It's a nice box, but kind of expensive- shipping almost doubles the price.
-`Rubber feet <>`_
+Rubber feet
   To put on the bottom of the enclosure box, to keep it from sliding around,
-`Mixed nuts, washers, bolts, screws, spacers
+Mixed nuts, washers, bolts, screws, spacers
   Attach the main control electronics to the box.
-`Power strip protoboard <>`_
-  There are a lot of ground and +5V/+9V connections required, more than are available on the Arduino itself. The power strip protoboard adds extra female pin headers to accommodate those connections.
-`100 uF capacitor <>`_
-  Smooths out any major variations in the 9V input.
-`Piezoelectric buzzer <>`_
-  For audio feedback of several functions. Can be turned off in hardware or software.
-`Heat sinks (7mm x 7mm to 10mm x 10mm) <>`_
-  These probably aren't necessary. The MOSFETs are rated to operate continuously at up to 13A at 100C, and they will never see more than an amp for a few seconds at a time at much lower temps; while I had heat sinks for these on the component list initially, I’ve removed them as unnecessary. The CAT4101 drivers will need to burn off more voltage, but even they won't be on for long periods, and have a thermal shutdown at 150C. Still, just to be safe, I use small heat sinks on the Cat4101s. I recommend getting heat sinks that come with tape adhesive in place
-  makes installation a lot easier.
-`Various headers <>`_
-  Used for wiring connections.
-`Dupont pins (male and female) <>`_
-  Used primarily for the LED wiring connections, but also in a few other locations. Housings needed for the female pins. If you live near the sea and corrosion is an issue, consider getting gold-plated Dupont pins, available on eBay; just slightly more expensive.
-`Black and red 22 AWG solid hookup wire <>`_
-  used for making connections inside the controller. Red and black to keep track of hot and ground connections, respectively. I say 10 ft. of each, which is probably more than you'll need, but it's cheap.
+  
+RTI Dome Parts
+^^^^^^^^^^^^^^
+
+What you need to build the RTI dome, to light up the object from multiple angles and take photographs through the top.
+
+Dome
+  I've already posted here and here on what's required for your dome. Deviate from these recommendations at your own peril. I’ve been happy with the domes I’ve gotten from EZTops, but any reliable source should be fine. Amazon has a 12” dome that looks good, for a slightly lower price than EZTops.
+`Flat/matte black spray paint for plastic <http://amzn.to/28SHcxM>`_
+  Used to cover the inside of the dome, to minimize scattered light from the interior. Make sure whatever black paint you choose dries with a "flat" or "matte" non-reflective finish <>`_
+  avoid "satin" finishes, and "glossy" is totally unacceptable. Also make sure the paint is specified as working with plastics. I found Rustoleum works best; Krylon also works, but requires more coats. For larger domes (>24” diameter), chalkboard paint is likely to be an easier and less expensive option.
+`Black reflective sphere <http://www.ebay.com/itm/Loose-Ceramic-Balls-12mm-G5-Quality-Si3N4-Silicon-Nitride-Bearing-Balls-/130823636164?hash=item1e75b244c4>`_
+  This will be used to calibrate the dome LED positions. I reference a high-quality silicon nitride bearing, but any decent black reflective sphere will work. This includes black marbles, stainless steel ball bearings dipped in black ink, or obsidian spheres for larger systems. For proper calibration, the sphere must have a diameter of at least 250 pixels when photographed from the top of the dome.
+`LEDs <http://www.ledsupply.com/leds/cree-xlamp-xpe2-white-high-power-led>`_
+  The system was designed to handle up to 3W LEDs mounted on star bases for heat sinking. I highly recommend Cree LEDs, and I also highly recommend buying from a reputable source. I made the mistake of buying "Cree" LEDs at bargain prices from Chinese vendors, which suffered from non-uniform intensities and wildly varying color balances. Official Cree LEDs are binned to match fairly closely in intensity and color balance. My vendor of choice is LED Supply <>`_
+  decent prices, volume discounts, and they ship quickly. Buy a few more than the minimum you need, in case you have problems in assembly, or wind up with a bum LED or two. New models of LED come out on a regular basis <>`_
+  my current choice is the 3W neutral white XP-E2 variety, 1up star. For domes 12-14" diameter, I recommend no more than 48 LEDs; 15-17", 56 LEDs; 18" and up, 64 LEDs (the maximum number the controller can handle).
+`2mm heat shrink tubing <http://www.ebay.com/itm/2mm-Heat-Shrink-Tubing-Shrinkable-Tubing-3-Meters-for-One-Price-Free-Shipping-/371661410591>`_
+  To insulate LED wiring connections.
+`Cat5e 24 AWG Ethernet patch cables <http://www.monoprice.com/product?p_id=11359>`_
+  These are used to connect the dome to the controller. I spec 24 AWG to maximize the current capacity and reduce resistive heating <>`_
+  I've run 1 A through the individual wire strands continuously for up to an hour without any significant heating. Monoprice is an awesome source for these, as well as any additional USB cables you might need. I spec 5 ft., but choose a longer length if you want more flexibility; you'll be cutting one end off of these, so you can always shorten them if necessary during the system build. I strongly recommend that one of the cables you buy be red, to be designated as the positive/high connection to the dome. For the other cable, pick any other color <>`_
+  I usually choose a color to match the dome (black or white for all the ones I've built to date).
+`4" cable/zip ties <http://amzn.to/28LRf9q>`_
+  Used to tidy up cables inside the dome. Available everywhere; I usually pick a color that matches the exterior of my dome.
+  
+Camera cables
+^^^^^^^^^^^^^^
