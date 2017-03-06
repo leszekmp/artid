@@ -11,7 +11,7 @@ By now, you've hopefully read the previous section on how to select a dome, have
 
 .. figure:: ../figures/dome_white.jpg
    :align: center
-   :alt: 
+   :scale: 30%
    
    Not exactly like this one - I've already marked the LED positions and painted the inside. But I'll use it as a model for this section.
 
@@ -19,13 +19,13 @@ When construction is completed, and all the LEDs installed, the inside of the do
 
 .. figure:: ../figures/dome_interior_48_led.jpg
    :align: center
-   :alt: 
+   :scale: 50%
    
    Interior of 12" diameter dome, with 48 LEDs
 
 .. figure:: ../figures/dome_interior_64_led.jpg
    :align: center
-   :alt: 
+   :scale: 70%
    
    Interior of 18" diameter dome, with 64 LEDs
 
@@ -44,6 +44,7 @@ Place the dome on a sheet of paper large enough to allow you to trace a circle a
 
 .. figure:: ../figures/dome_trace_circle.jpg
    :align: center
+   :scale: 50%
    
    Trace circle; dome obscures about half of it
 
@@ -63,11 +64,13 @@ Draw lines through these marks extending out to the edges of the circle; make an
 
 .. figure:: ../figures/dome_draw_lines.jpg
    :align: center
+   :scale: 50%
    
    Lines intercept edge of circle at 8 points (45-degree spacing)
 
 .. figure:: ../figures/dome_draw_lines_extra_mark.jpg
    :align: center
+   :scale: 50%
    
    Extra mark at 22.5 degree angle
 
@@ -75,6 +78,8 @@ Place the dome back on the paper so that it is centered inside the traced circle
 
 .. figure:: ../figures/dome_flange_marks.jpg
    :align: center
+   :scale: 50%
+   
    Dome flange marked at 45-degree increments
 
 Now take the dome and rotate it in the traced circle until one of the initial marks lines up with the mark created in step 6 above. Repeat the process of marking the dome flange at all the positions where the angle lines intersected the circle; try and differentiate this mark somehow from the first set (different color, put a slash through it, etc.). You have now marked the angular positions for all the columns. Half the rows will have their LED columns lined up with the first set of marks, the other half will be lined up with the second set of marks.
@@ -155,6 +160,7 @@ Tape the first string to the dome at the base with the flange at one of the mark
 
 .. figure:: ../figures/dome_marking_columns_1.jpg
    :align: center
+   :scale: 50%
    
    Marking the first set of columns
    
@@ -164,6 +170,7 @@ And this is how the dome should look when you're done when viewed from above:
 
 .. figure:: ../figures/dome_top_view.jpg
    :align: center
+   :scale: 50%
    
    48 marks on this dome for 8 columns x 6 rows of LEDs
    
@@ -199,6 +206,7 @@ That's it. Hopefully, you will see the LED position marks you created in Step C,
 
 .. figure:: ../figures/dome_drilled_holes.jpg
    :align: center
+   :scale: 70%
    
    Drilled "dimples" that mark LED positions in painted interior of dome. I made these too deep, to the point that some of them almost punched through the outside of the dome.
 
