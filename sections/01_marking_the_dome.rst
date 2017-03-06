@@ -9,7 +9,7 @@ This first section will deal with prepping the dome for installing the LED light
 
 By now, you've hopefully read the previous section on how to select a dome, have ordered it, and now have it sitting before you, like this one :
 
-.. figure:: ../figures/dome_white.jpg
+.. figure:: ../figures/dome/dome_white.jpg
    :align: center
    :scale: 30%
    
@@ -17,13 +17,13 @@ By now, you've hopefully read the previous section on how to select a dome, have
 
 When construction is completed, and all the LEDs installed, the inside of the dome will look something like one of these :
 
-.. figure:: ../figures/dome_interior_48_led.jpg
+.. figure:: ../figures/dome/dome_interior_48_led.jpg
    :align: center
    :scale: 70%
    
    Interior of 12" diameter dome, with 48 LEDs
 
-.. figure:: ../figures/dome_interior_64_led.jpg
+.. figure:: ../figures/dome/dome_interior_64_led.jpg
    :align: center
    :scale: 70%
    
@@ -42,7 +42,7 @@ To find the angular spacing, just divide the number of columns into 360 degrees.
 
 Place the dome on a sheet of paper large enough to allow you to trace a circle around the edge of the dome flange, then trace the circle.
 
-.. figure:: ../figures/dome_trace_circle.jpg
+.. figure:: ../figures/dome/dome_trace_circle.jpg
    :align: center
    :scale: 50%
    
@@ -50,7 +50,7 @@ Place the dome on a sheet of paper large enough to allow you to trace a circle a
 
 Find the center of the circle you've just drawn. There are several methods you can use (`ask Google <https://www.google.com/search?q=find+the+center+of+a+circle&oq=find+the+&aqs=chrome.0.69i59j69i65l3j69i57j0.1575j0j4&sourceid=chrome&ie=UTF-8>`_), but `this one <http://www.mathopenref.com/constcirclecenter2.html>`_ is probably the simplest and cleverest.
 
-.. figure:: ../figures/dome_center.jpg
+.. figure:: ../figures/dome/dome_center.jpg
    :align: center
    
    Center found!
@@ -62,13 +62,13 @@ Angles marked at 0/45/90/135 degrees
 
 Draw lines through these marks extending out to the edges of the circle; make an accentuating mark (x, dot, whatever) where the line and circle intersect.
 
-.. figure:: ../figures/dome_draw_lines.jpg
+.. figure:: ../figures/dome/dome_draw_lines.jpg
    :align: center
    :scale: 50%
    
    Lines intercept edge of circle at 8 points (45-degree spacing)
 
-.. figure:: ../figures/dome_draw_lines_extra_mark.jpg
+.. figure:: ../figures/dome/dome_draw_lines_extra_mark.jpg
    :align: center
    :scale: 50%
    
@@ -76,7 +76,7 @@ Draw lines through these marks extending out to the edges of the circle; make an
 
 Place the dome back on the paper so that it is centered inside the traced circle. Mark the flange clearly at every position where the angle lines intersected the circle. You may find it tough to find something that can temporarily mark acrylic plastic. Sharpie permanent markers work quite well, and the mark can be removed by rubbing with a paper towel soaked in WD-40; other solvents may work, but test them first to make sure they don't dissolve the plastic. Bits of masking tape are another option.
 
-.. figure:: ../figures/dome_flange_marks.jpg
+.. figure:: ../figures/dome/dome_flange_marks.jpg
    :align: center
    :scale: 50%
    
@@ -84,7 +84,7 @@ Place the dome back on the paper so that it is centered inside the traced circle
 
 Now take the dome and rotate it in the traced circle until one of the initial marks lines up with the mark created in step 6 above. Repeat the process of marking the dome flange at all the positions where the angle lines intersected the circle; try and differentiate this mark somehow from the first set (different color, put a slash through it, etc.). You have now marked the angular positions for all the columns. Half the rows will have their LED columns lined up with the first set of marks, the other half will be lined up with the second set of marks.
 
-.. figure:: ../figures/dome_flange_marks_2.jpg
+.. figure:: ../figures/dome/dome_flange_marks_2.jpg
    :align: center
    :scale: 50%
    
@@ -155,14 +155,14 @@ The small dome (12" dome diameter (the size of the dome I'm building here), 6 ro
 
 Now you need some way to mark these distances on the dome. Take a piece of string, make one mark on it to indicate the zero reference point, and then measure and mark positions for the first set of row distances on that piece of string (1.6", 3.7", 5.7" in this case). Create a similar second string for the other set of row distances (2.6", 4.7", 6.8"). Taping the ends of the strings down while marking them helps keep them straight.
 
-.. figure:: ../figures/dome_strings_marking.jpg
+.. figure:: ../figures/dome/dome_strings_marking.jpg
    :align: center
    
    Marking sets of distances on two string segments. The long marks at left mark the zero point on the right edge of the mark. These are distances for the 12" dome, Example 2.
 
 Tape the first string to the dome at the base with the flange at one of the marked angles, so that the zero distance mark is at that base. Tape or hold the other end of the string on the top edge of the hole, making the string as perpendicular to the base as you can. Make marks on the dome next to the marks on the string. Repeat this for all matching marks with the same angular spacing as in A.1.
 
-.. figure:: ../figures/dome_marking_columns_1.jpg
+.. figure:: ../figures/dome/dome_marking_columns_1.jpg
    :align: center
    :scale: 50%
    
@@ -172,7 +172,7 @@ Repeat step B.3 with the second piece of string, on the other set of marked angl
 
 And this is how the dome should look when you're done when viewed from above:
 
-.. figure:: ../figures/dome_top_view.jpg
+.. figure:: ../figures/dome/dome_top_view.jpg
    :align: center
    :scale: 50%
    
@@ -210,7 +210,7 @@ Just recently, I stumbled across another option for painting the interiors of th
 
 That's it. Hopefully, you will see the LED position marks you created in Step C, like these drilled dimples in my dome, visible after painting:
 
-.. figure:: ../figures/dome_drilled_holes.jpg
+.. figure:: ../figures/dome/dome_drilled_holes.jpg
    :align: center
    :scale: 70%
    
