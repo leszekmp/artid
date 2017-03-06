@@ -7,6 +7,7 @@ Affordable Reflectance Transformation Imaging Dome
    :numbered:
    
    sections/00a_Design_considerations.rst
+   sections/00b_Parts and Tools.rst
    sections/01_marking_the_dome.rst
    sections/02_MOSFET_driver_shield.rst
    sections/03_CAT4101_board.rst
