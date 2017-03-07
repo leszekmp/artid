@@ -15,7 +15,7 @@ Fortunately, there's something called a "breakout board" for the style of chip p
 
 .. figure:: ../figures/cat4101_board/cat4101_board_02.jpg
    :align: center
-   :width: 8cm
+   :width: 5cm
 
 And here's the two chips again, this time with the CAT4101 sitting on the breakout board:
 
@@ -27,13 +27,13 @@ You still have to solder the CAT4101 chip to the breakout board, though. I use a
 
 .. figure:: ../figures/cat4101_board/cat4101_board_04.jpg
    :align: center
-   :width: 8cm   
+   :width: 5cm   
 
 To solder the leads, the technique that works best for me is to hold the tip of the soldering iron touching both the gold pad on the breakout board and the end of the chip lead. Then apply the solder carefully to the end of the lead, and it should flow smoothly along the length where the lead touches the pad. Don't apply too much solder, or it may blob up and connect adjacent pads/leads, requiring cleanup and a re-do. When you're done, it should look something like this:
 
 .. figure:: ../figures/cat4101_board/cat4101_board_05.jpg
    :align: center
-   :width: 8cm
+   :width: 5cm
 
 Double-check to make sure there are no shorts between leads. Do this for all 8 CAT4101 chips.
 

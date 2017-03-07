@@ -113,7 +113,7 @@ Controller parts
 `2N3904 NPN transistor <http://www.taydaelectronics.com/2n3904-npn-general-propose-transistor.html>`_
   Controls IRF9540 MOSFETs.
   
-Power strip protoboard <http://www.taydaelectronics.com/hardware/prototyping-boards/small-stripboard-94x53mm-copper.html>`_
+`Power strip protoboard <http://www.taydaelectronics.com/hardware/prototyping-boards/small-stripboard-94x53mm-copper.html>`_
   There are a lot of ground and +5V/+9V connections required, more than are available on the Arduino itself. The power strip protoboard adds extra female pin headers to accommodate those connections.
 `100 uF capacitor <http://www.taydaelectronics.com/capacitors/electrolytic-capacitors/100uf-35v-105c-radial-electrolytic-capacitor-6x11mm.html>`_
   Smooths out any major variations in the 9V input.
@@ -121,7 +121,7 @@ Power strip protoboard <http://www.taydaelectronics.com/hardware/prototyping-boa
   For audio feedback of several functions. Can be turned off in hardware or software.
 Heat sinks (7mm x 7mm to 10mm x 10mm)
   These probably aren't necessary. The MOSFETs are rated to operate continuously at up to 13A at 100C, and they will never see more than an amp for a few seconds at a time at much lower temps; while I had heat sinks for these on the component list initially, I’ve removed them as unnecessary. The CAT4101 drivers will need to burn off more voltage, but even they won't be on for long periods, and have a thermal shutdown at 150C. Still, just to be safe, I use small heat sinks on the Cat4101s. I recommend getting heat sinks that come with tape adhesive in place - makes installation a lot easier.
-`Various headers <>`_
+Various headers
   Used for wiring connections.
 `Dupont pins (male and female) <http://www.ebay.com/itm/200pcs-Male-Female-Pins-2-54mm-Long-Dupont-Head-Reed-Terminal-Plug-/262364253211>`_
   Used primarily for the LED wiring connections, but also in a few other locations. `Housings <http://www.ebay.com/itm/100pcs-Dupont-Jumper-Wire-Cable-Housing-Connector-2-54mm-1P-2P-3P-4P-10P-Header-/322111342896>`_ needed for the female pins. If you live near the sea and corrosion is an issue, consider getting gold-plated Dupont pins, available on eBay; just slightly more expensive.
@@ -147,20 +147,18 @@ What you need to build the RTI dome, to light up the object from multiple angles
 Dome
   I've already posted here and here on what's required for your dome. Deviate from these recommendations at your own peril. I’ve been happy with the domes I’ve gotten from EZTops, but any reliable source should be fine. Amazon has a `12” dome <http://amzn.to/2hlUpnJ>`_ that looks good, for a slightly lower price than EZTops.
 `Flat/matte black spray paint for plastic <http://amzn.to/28SHcxM>`_
-  Used to cover the inside of the dome, to minimize scattered light from the interior. Make sure whatever black paint you choose dries with a "flat" or "matte" non-reflective finish <>`_
-  avoid "satin" finishes, and "glossy" is totally unacceptable. Also make sure the paint is specified as working with plastics. I found Rustoleum works best; Krylon also works, but requires more coats. For larger domes (>24” diameter), `chalkboard paint <http://amzn.to/2i8YNrm>`_ is likely to be an easier and less expensive option.
+  Used to cover the inside of the dome, to minimize scattered light from the interior. Make sure whatever black paint you choose dries with a "flat" or "matte" non-reflective finish.
+  Avoid "satin" finishes, "glossy" is totally unacceptable. Also make sure the paint is specified as working with plastics. I found Rustoleum works best; Krylon also works, but requires more coats. For larger domes (>24” diameter), `chalkboard paint <http://amzn.to/2i8YNrm>`_ is likely to be an easier and less expensive option.
 `Black reflective sphere <http://www.ebay.com/itm/Loose-Ceramic-Balls-12mm-G5-Quality-Si3N4-Silicon-Nitride-Bearing-Balls-/130823636164?hash=item1e75b244c4>`_
   This will be used to calibrate the dome LED positions. I reference a high-quality silicon nitride bearing, but any decent black reflective sphere will work. This includes `black marbles <http://www.ebay.com/itm/GLASS-MARBLE-BLACK-PEARL-22mm-SHOOTER-/172232915568?hash=item2819e1ba70:g:W50AAOSwpDdU7Xud>`_, stainless steel ball bearings dipped in black ink, or `obsidian spheres <http://www.ebay.com/itm/NATURAL-OBSIDIAN-POLISHED-BLACK-CRYSTAL-SPHERE-BALL-40mm-stand-bb7-/272218397667?hash=item3f617b1be3:g:OzQAAOSwIUNXF5D5>`_ for larger systems. For proper calibration, the sphere must have a diameter of at least 250 pixels when photographed from the top of the dome.
 `LEDs <http://www.ledsupply.com/leds/cree-xlamp-xpe2-white-high-power-led>`_
-  The system was designed to handle up to 3W LEDs mounted on star bases for heat sinking. I highly recommend Cree LEDs, and I also highly recommend buying from a reputable source. I made the mistake of buying "Cree" LEDs at bargain prices from Chinese vendors, which suffered from non-uniform intensities and wildly varying color balances. Official Cree LEDs are binned to match fairly closely in intensity and color balance. My vendor of choice is LED Supply <>`_
-  decent prices, volume discounts, and they ship quickly. Buy a few more than the minimum you need, in case you have problems in assembly, or wind up with a bum LED or two. New models of LED come out on a regular basis <>`_
-  my current choice is the 3W neutral white `XP-E2 <http://www.ledsupply.com/leds/cree-xlamp-xpe2-white-high-power-led>`_ variety, 1up star. For domes 12-14" diameter, I recommend no more than 48 LEDs; 15-17", 56 LEDs; 18" and up, 64 LEDs (the maximum number the controller can handle).
+  The system was designed to handle up to 3W LEDs mounted on star bases for heat sinking. I highly recommend Cree LEDs, and I also highly recommend buying from a reputable source. I made the mistake of buying "Cree" LEDs at bargain prices from Chinese vendors, which suffered from non-uniform intensities and wildly varying color balances. Official Cree LEDs are binned to match fairly closely in intensity and color balance. My vendor of choice is LED Supply, decent prices, volume discounts, and they ship quickly. Buy a few more than the minimum you need, in case you have problems in assembly, or wind up with a bum LED or two. New models of LED come out on a regular basis, my current choice is the 3W neutral white `XP-E2 <http://www.ledsupply.com/leds/cree-xlamp-xpe2-white-high-power-led>`_ variety, 1up star. For domes 12-14" diameter, I recommend no more than 48 LEDs; 15-17", 56 LEDs; 18" and up, 64 LEDs (the maximum number the controller can handle).
 `2mm heat shrink tubing <http://www.ebay.com/itm/2mm-Heat-Shrink-Tubing-Shrinkable-Tubing-3-Meters-for-One-Price-Free-Shipping-/371661410591>`_
   To insulate LED wiring connections.
 `Cat5e 24 AWG Ethernet patch cables <http://www.monoprice.com/product?p_id=11359>`_
-  These are used to connect the dome to the controller. I spec 24 AWG to maximize the current capacity and reduce resistive heating <>`_
-  I've run 1 A through the individual wire strands continuously for up to an hour without any significant heating. Monoprice is an awesome source for these, as well as any additional USB cables you might need. I spec 5 ft., but choose a longer length if you want more flexibility; you'll be cutting one end off of these, so you can always shorten them if necessary during the system build. I strongly recommend that one of the cables you buy be red, to be designated as the positive/high connection to the dome. For the other cable, pick any other color <>`_
-  I usually choose a color to match the dome (black or white for all the ones I've built to date).
+  These are used to connect the dome to the controller. I spec 24 AWG to maximize the current capacity and reduce resistive heating
+  I've run 1 A through the individual wire strands continuously for up to an hour without any significant heating. Monoprice is an awesome source for these, as well as any additional USB cables you might need. I spec 5 ft., but choose a longer length if you want more flexibility; you'll be cutting one end off of these, so you can always shorten them if necessary during the system build. I strongly recommend that one of the cables you buy be red, to be designated as the positive/high connection to the dome. 
+  For the other cable, pick any other color. I usually choose a color to match the dome (black or white for all the ones I've built to date).
 `4" cable/zip ties <http://amzn.to/28LRf9q>`_
   Used to tidy up cables inside the dome. Available everywhere; I usually pick a color that matches the exterior of my dome.
   
@@ -223,7 +221,7 @@ Wiring tools
 ************
 
 `Wire stripper <http://amzn.to/28V1B3N>`_
-  No, the cheap one with the screw adjusted won't work. Get one with fixed holes for AWG wire diameters 22 to at least 26. I use the linked one, but there's a slightly cheaper one`<http://www.digikey.com/product-detail/en/jonard-tools/JIC-1626/K598-ND/2308354>`_ by a reputable maker at Digikey.
+  No, the cheap one with the screw adjusted won't work. Get one with fixed holes for AWG wire diameters 22 to at least 26. I use the linked one, but there's a `slightly cheaper one <http://www.digikey.com/product-detail/en/jonard-tools/JIC-1626/K598-ND/2308354>`_ by a reputable maker at Digikey.
 `Flush cutter <http://amzn.to/28YoMwz>`_ or `diagonal cutter <http://amzn.to/294AtRz>`_
   Used for trimming electrical wires and part leads. The Hakko flush cutter works well and is cheaper, but the diagonal cutter works nearly as well, and you're likely to find it handier for other tasks in the future than the Hakko.
 `Needle-nose pliers <http://amzn.to/28XBmtM>`_
@@ -257,7 +255,7 @@ Optional, but helpful
 `Solder sucker <http://amzn.to/28UZRHK>`_ / solder wick <http://amzn.to/28TjPRT>`_
   If you're a master solderer and never make mistakes, you may not need these <>`_
   they help fix soldering problems by removing solder. I have both :). Check this `video <https://www.youtube.com/watch?v=N_dvf45hN6Y>`_ for more info.
-`Flux <>`_
+Flux
   Love this stuff; makes soldering problem connections a lot easier. Cleans off with rubbing alcohol.
 `Dremel or other rotary tool <http://amzn.to/2ayZ84W>`_
   Primarily useful for cutting holes in the controller enclosure, as well as general cutting/sanding/filing/milling. You can do all this stuff with other tools as well, it may just take longer.
@@ -266,7 +264,6 @@ Optional, but helpful
 `Anti-static wrist strap <http://amzn.to/29zNCRJ>`_
   Static discharge is bad in general for electronics, and the P-channel MOSFETs in particular are very static-sensitive. This wrist strap offers a level of protection from static discharge.
 `Step drill (aka Unibit) <http://amzn.to/2azgtYJ>`_
-  The 1/8" acrylic drill listed above will be good enough for most of the holes you need to drill. However, there are a couple of holes in the dome that will need to be a bit larger. You can drill these by starting with the acrylic drill, and then gradually increasing the size of the drill bit you use until you reach the final size. If you skip too quickly to a larger size, you risk cracking or breaking the dome. A step drill has a conical shape with gradually increasing bit sizes in a single bit <>`_
-  you start with a smaller size, and gradually work your way up to a larger size. I've used these often on acrylic plastic, and as long as you start with a pre-drilled hole, you shouldn't have problems with cracking/breakage as long as you don't apply too much pressure while drilling.
+  The 1/8" acrylic drill listed above will be good enough for most of the holes you need to drill. However, there are a couple of holes in the dome that will need to be a bit larger. You can drill these by starting with the acrylic drill, and then gradually increasing the size of the drill bit you use until you reach the final size. If you skip too quickly to a larger size, you risk cracking or breaking the dome. A step drill has a conical shape with gradually increasing bit sizes in a single bit, you start with a smaller size, and gradually work your way up to a larger size. I've used these often on acrylic plastic, and as long as you start with a pre-drilled hole, you shouldn't have problems with cracking/breakage as long as you don't apply too much pressure while drilling.
   
 I may think of more tools as I write up the build, watch this space.

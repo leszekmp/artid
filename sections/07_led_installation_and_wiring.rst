@@ -221,13 +221,11 @@ Now that all the wires are done, bend down any wire slack reasonably flush with 
 
 Now that the LED matrix is fully wired, the last step is to make the connection between the matrix rows/columns and the power cables. Power is supplied using Ethernet cables, the same ones you chopped one short end off of in a previous step to make a testing cable. Grab the remaining cables, and trim them both to be the same length. The recommended original length was 7 ft., and 5-6 ft. is a reasonable trimmed length (longer for big domes, shorter for smaller ones). If you start with a 5 ft. cable, 4-4.5 ft. is OK.
 
- You should have one red cable, which will supply positive voltage to the columns, and one cable of some other color, which will connect the rows to ground. In this case, I have a white cable that will do the ground connections (to color-coordinate with the white dome). Using the same method as in a previous step, cut off about 2” of exterior insulation from both cables, trim off any central plastic rib, unwind the paired wires, and trim off about 3 mm of insulation from the end of each wire. 
+You should have one red cable, which will supply positive voltage to the columns, and one cable of some other color, which will connect the rows to ground. In this case, I have a white cable that will do the ground connections (to color-coordinate with the white dome). Using the same method as in a previous step, cut off about 2” of exterior insulation from both cables, trim off any central plastic rib, unwind the paired wires, and trim off about 3 mm of insulation from the end of each wire. 
 
 .. figure:: ../figures/led_wiring/led_wiring_29.jpg
    :align: center
    :width: 8cm
-
-
 
 .. figure:: ../figures/led_wiring/led_wiring_30.jpg
    :align: center
@@ -308,7 +306,7 @@ For the other four, work in reverse order in the other direction. In other words
 Time to test the wiring. I’ve written two programs that will test all the LEDs; you should find these in the Files section :
 
 * the first one, Dazzler, lights up the LEDs `at random <https://www.youtube.com/watch?v=sZodZTIxyog>`_
-* the second one, Serial_Test, lights up the LEDS `one at a time<https://www.youtube.com/watch?v=BidsNozm-DQ>`_, first by row, second by column.
+* the second one, Serial_Test, lights up the LEDS `one at a time <https://www.youtube.com/watch?v=BidsNozm-DQ>`_, first by row, second by column.
 
 Upload these individually to the Arduino controller using the Arduino IDE (described in an earlier step). The default setting for both these programs is 8 Rows, 8 Columns; if your dome has fewer Rows or Columns, modify the appropriate constants in the program. So for my test, I changed the Rows constant from 8 to 6 (no decimal point). If you’ve finished the control box while waiting for the LED adhesive to dry, use that; otherwise, use the same wiring configuration in the system test done earlier.
 

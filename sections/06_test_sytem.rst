@@ -178,7 +178,7 @@ Plug the black ground wire soldered to the Arduino power input into the top left
    :align: center
    :width: 8cm
 
- Connect a jumper wire between the positive power strip header and the two pin header on the lower left side of the MOSFET shield board (the blue wire in this picture):
+Connect a jumper wire between the positive power strip header and the two pin header on the lower left side of the MOSFET shield board (the blue wire in this picture):
 
 .. figure:: ../figures/test/test_17.jpg
    :align: center
