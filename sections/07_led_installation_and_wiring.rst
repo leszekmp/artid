@@ -147,8 +147,8 @@ The last lead will be a short one at the bottom, which you’ll be connecting to
    Some of the upcoming pictures will show the + leads bent down towards the bottom, like this:
 
    .. image:: ../figures/led_wiring/led_wiring_21.jpg
-   :align: middle
-   :width: 8cm
+      :align: middle
+      :width: 8cm
    
    **DON’T DO THIS!!!**
    
