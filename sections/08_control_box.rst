@@ -560,7 +560,8 @@ Last step in the control box assembly is to stick the rubber feet onto the botto
 
 Hey – control box is pretty much done! I put labels on the controls and jacks to identify them. I’ll go through the functions now as a sneak preview of the operating manual.
 
-Front panel:
+Front panel
+-----------
 
 .. figure:: ../figures/control_box/control_box_81.jpg
    :align: center
@@ -577,7 +578,8 @@ ACTION
 WB
   This turns on the LEDs in the top row in sequence, useful for setting the exposure parameters and the White Balance (hence WB). 
 
-Right panel:
+Right panel
+-----------
 
 .. figure:: ../figures/control_box/control_box_82.jpg
    :align: center
@@ -585,7 +587,8 @@ Right panel:
 
 The Ethernet cables from the RTI dome plug in here, positive (red) on the right, ground (black/white/whatever) on the left.
 
-Rear panel:
+Rear panel
+----------
 
 .. figure:: ../figures/control_box/control_box_83.jpg
    :align: center
@@ -602,7 +605,8 @@ SHUTTER USB/IR
 
 All of these switch functions are set in software, so if you decide you’d rather have a switch do something else, you can modify that in software.
 
-Left panel:
+Left panel
+----------
 
 .. figure:: ../figures/control_box/control_box_84.jpg
    :align: center
