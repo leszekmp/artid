@@ -15,3 +15,4 @@ Affordable Reflectance Transformation Imaging Dome
    sections/04_power.rst
    sections/05_leds.rst
    sections/06_test_sytem.rst
+   sections/07_led_installation_and_wiring.rst
