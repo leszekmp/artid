@@ -142,15 +142,15 @@ Similarly, you’ll be connecting all the + LED leads together in a column. Unli
 
 The last lead will be a short one at the bottom, which you’ll be connecting to another wire.
 
-Quick note: some of the upcoming pictures will show the + leads bent down towards the bottom, like this:
-
-.. figure:: ../figures/led_wiring/led_wiring_21.jpg
-   :align: center
-   :width: 8cm
-
 .. warning::
    
-   DON’T DO THIS!!! 
+   Some of the upcoming pictures will show the + leads bent down towards the bottom, like this:
+
+   .. figure:: ../figures/led_wiring/led_wiring_21.jpg
+   :align: center
+   :width: 8cm
+   
+   **DON’T DO THIS!!!**
    
    I had an idea that this would make the wiring a bit easier. I was wrong, and ultimately wound up bending them back. Just leave the + LED leads as straight as they were when you glued the LEDs inside the dome – it makes the wiring a lot easier.
 
