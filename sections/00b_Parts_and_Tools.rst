@@ -9,7 +9,11 @@ RTI requires you to take photographs from a fixed position above the object of i
 
 The most important initial question you have to ask yourself is, how big a dome do I need? To answer that question, you have to think about what an ideal light source would be for RTI. It would be at a constant incident intensity across the entire object you were imaging, and also all the light rays would be parallel. But unless your light source is infinitely far away from the object, that's virtually impossible to achieve. For a perfect point light source, the intensity will drop off inversely proportional to the square of the distance (the classic inverse-square law, describing how a spherical intensity changes with distance). But LEDs are not a perfect light source in that their output light varies with angle. For the LEDs I'm using, maximum intensity occurs at an angle of 0 degrees, and drops off essentially with the cosine of the angle (the Lambertian distribution).
 
-Lambertian distribution of light intensity with angle in one dimension (Source: ledsupply.com)
+.. figure:: ../figures/led_intensity_angle.png
+   :align: center
+   :width: 8cm
+   
+   Lambertian distribution of light intensity with angle in one dimension (Source: ledsupply.com)
 
 The further away the light is from an object, the less important both of these effects become. The radius of the sphere of light becomes larger and flatter, so that the variation in light across the object decrease; the angular width relative to the light position also decreases, so you're up at the flatter part of the Lambertian curve centered around zero degrees. So, ideally, you'd want a dome of nearly infinite radius. Of course this is logistically impractical, and you’d you have to increase the power of the light source so that some reasonable amount of it is still available to hit the object and light it up - also not practical. So you're going to have to live with some non-uniformity of lighting, but the bigger the dome, the relatively more uniform the light will be over a larger area.
 
@@ -141,16 +145,16 @@ RTI Dome Parts
 What you need to build the RTI dome, to light up the object from multiple angles and take photographs through the top.
 
 Dome
-  I've already posted here and here on what's required for your dome. Deviate from these recommendations at your own peril. I’ve been happy with the domes I’ve gotten from EZTops, but any reliable source should be fine. Amazon has a 12” dome that looks good, for a slightly lower price than EZTops.
+  I've already posted here and here on what's required for your dome. Deviate from these recommendations at your own peril. I’ve been happy with the domes I’ve gotten from EZTops, but any reliable source should be fine. Amazon has a `12” dome <http://amzn.to/2hlUpnJ>`_ that looks good, for a slightly lower price than EZTops.
 `Flat/matte black spray paint for plastic <http://amzn.to/28SHcxM>`_
   Used to cover the inside of the dome, to minimize scattered light from the interior. Make sure whatever black paint you choose dries with a "flat" or "matte" non-reflective finish <>`_
-  avoid "satin" finishes, and "glossy" is totally unacceptable. Also make sure the paint is specified as working with plastics. I found Rustoleum works best; Krylon also works, but requires more coats. For larger domes (>24” diameter), chalkboard paint is likely to be an easier and less expensive option.
+  avoid "satin" finishes, and "glossy" is totally unacceptable. Also make sure the paint is specified as working with plastics. I found Rustoleum works best; Krylon also works, but requires more coats. For larger domes (>24” diameter), `chalkboard paint <http://amzn.to/2i8YNrm>`_ is likely to be an easier and less expensive option.
 `Black reflective sphere <http://www.ebay.com/itm/Loose-Ceramic-Balls-12mm-G5-Quality-Si3N4-Silicon-Nitride-Bearing-Balls-/130823636164?hash=item1e75b244c4>`_
-  This will be used to calibrate the dome LED positions. I reference a high-quality silicon nitride bearing, but any decent black reflective sphere will work. This includes black marbles, stainless steel ball bearings dipped in black ink, or obsidian spheres for larger systems. For proper calibration, the sphere must have a diameter of at least 250 pixels when photographed from the top of the dome.
+  This will be used to calibrate the dome LED positions. I reference a high-quality silicon nitride bearing, but any decent black reflective sphere will work. This includes `black marbles <http://www.ebay.com/itm/GLASS-MARBLE-BLACK-PEARL-22mm-SHOOTER-/172232915568?hash=item2819e1ba70:g:W50AAOSwpDdU7Xud>`_, stainless steel ball bearings dipped in black ink, or `obsidian spheres <http://www.ebay.com/itm/NATURAL-OBSIDIAN-POLISHED-BLACK-CRYSTAL-SPHERE-BALL-40mm-stand-bb7-/272218397667?hash=item3f617b1be3:g:OzQAAOSwIUNXF5D5>`_ for larger systems. For proper calibration, the sphere must have a diameter of at least 250 pixels when photographed from the top of the dome.
 `LEDs <http://www.ledsupply.com/leds/cree-xlamp-xpe2-white-high-power-led>`_
   The system was designed to handle up to 3W LEDs mounted on star bases for heat sinking. I highly recommend Cree LEDs, and I also highly recommend buying from a reputable source. I made the mistake of buying "Cree" LEDs at bargain prices from Chinese vendors, which suffered from non-uniform intensities and wildly varying color balances. Official Cree LEDs are binned to match fairly closely in intensity and color balance. My vendor of choice is LED Supply <>`_
   decent prices, volume discounts, and they ship quickly. Buy a few more than the minimum you need, in case you have problems in assembly, or wind up with a bum LED or two. New models of LED come out on a regular basis <>`_
-  my current choice is the 3W neutral white XP-E2 variety, 1up star. For domes 12-14" diameter, I recommend no more than 48 LEDs; 15-17", 56 LEDs; 18" and up, 64 LEDs (the maximum number the controller can handle).
+  my current choice is the 3W neutral white `XP-E2 <http://www.ledsupply.com/leds/cree-xlamp-xpe2-white-high-power-led>`_ variety, 1up star. For domes 12-14" diameter, I recommend no more than 48 LEDs; 15-17", 56 LEDs; 18" and up, 64 LEDs (the maximum number the controller can handle).
 `2mm heat shrink tubing <http://www.ebay.com/itm/2mm-Heat-Shrink-Tubing-Shrinkable-Tubing-3-Meters-for-One-Price-Free-Shipping-/371661410591>`_
   To insulate LED wiring connections.
 `Cat5e 24 AWG Ethernet patch cables <http://www.monoprice.com/product?p_id=11359>`_
@@ -162,3 +166,107 @@ Dome
   
 Camera cables
 ^^^^^^^^^^^^^^
+
+If you haven't already, read my log on camera considerations for additional background on these parts. I highly recommend Monoprice for all your USB cable needs.
+
+Canon camera with CHDK:
+***********************
+
+All you need is the standard USB cable that plugs into the camera on one end, a female USB jack on the other. Depending on your configuration, you may want to get a longer cable, or a USB extension cable.
+
+Camera with IR remote capability:
+*********************************
+
+* `940 nm IR LED <http://www.taydaelectronics.com/review/product/list/id/2707/category/224/>`_
+* `47R 1/2-W resistor <http://www.taydaelectronics.com/resistors/1-2w-carbon-film-resistors/47-ohm-1-2w-5-carbon-film-resistor.html>`_
+* USB cable
+
+Assembly is easy, just wire the resistor in series with the LED, connect to the USB cable; see the assembly instructions for more details. Software supports cameras made by Canon, Nikon, Olympus, Pentax, Sony, and Minolta that have IR remote capability. I recommend this option heartily for any camera that supports IR remote; cheapest, easiest and most flexible option.
+
+Camera with hardwired remote capability:
+
+* `4N35 Optoisolator <http://www.taydaelectronics.com/4n35-optocouplers-phototransistor-30v-ic.html>`_
+* `220R resistor <http://www.taydaelectronics.com/resistors/1-4w-carbon-film-resistors/10-x-resistor-220-ohm-1-4w-5-carbon-film-pkg-of-10.html>`_
+* Remote connector plug compatible with your camera. You may have to buy a cheap hardwired remote on eBay or Amazon, and then cut off the connector plug.
+* USB cable
+
+More explicit instructions in the assembly instructions.
+
+Dome stand
+^^^^^^^^^^
+
+Check the assembly instructions - lots of options here, as well as the freedom to set it up anyway you want.
+
+Tool time
+---------
+
+Apologies to experienced makers - you probably have/know all of this. This project is potentially of use to many people that might not be makers (like archaeologists and paleontologists), so I'm throwing in a bit of background material on the toolset that's needed. The links are to show you examples of what you'll need (I don't usually own the ones I've linked to) - any equivalent to these tools will be fine.
+
+Absolutely required
+^^^^^^^^^^^^^^^^^^^
+
+If you're going to build this RTI system, you'll definitely need the following tools: buy, beg, borrow or steal.
+
+Soldering tools
+***************
+
+The electronics are put together using soldering for the most part, nothing fancy. If you've never soldered before, it's not that hard. Check YouTube for training videos on how to solder, some are very good. This `Adafruit guide <https://learn.adafruit.com/adafruit-guide-excellent-soldering/preparation>`_ is worth a look.
+
+`Soldering iron <http://amzn.to/299zXRd>`_
+  Don't need a super-fancy one, just make sure it has a point tip on it; I'd recommend 40W or higher, with controllable temperature. You don't want a soldering gun, or an iron with a large chisel tip, as these won't work well for the small-scale through-hole soldering you'll be doing. The linked soldering iron includes a few extras, including some items listed below. I own this one, a bit more control.
+`Solder <https://www.amazon.com/gp/product/B0006O933K?ie=UTF8>`_
+  Get the thin stuff, 1 mm (.039") or smaller in diameter; easier to handle, and melts faster. Also make sure it's rosin core.
+`Brass tip cleaner <http://amzn.to/294ywou>`_ / `sponge tip cleaner for solder <http://amzn.to/28UZzjA>`_
+  Cleans oxide and unneeded solder of your soldering iron. I prefer the brass cleaner, but the wet sponges work as well.
+  
+Wiring tools
+************
+
+`Wire stripper <http://amzn.to/28V1B3N>`_
+  No, the cheap one with the screw adjusted won't work. Get one with fixed holes for AWG wire diameters 22 to at least 26. I use the linked one, but there's a slightly cheaper one`<http://www.digikey.com/product-detail/en/jonard-tools/JIC-1626/K598-ND/2308354>`_ by a reputable maker at Digikey.
+`Flush cutter <http://amzn.to/28YoMwz>`_ or `diagonal cutter <http://amzn.to/294AtRz>`_
+  Used for trimming electrical wires and part leads. The Hakko flush cutter works well and is cheaper, but the diagonal cutter works nearly as well, and you're likely to find it handier for other tasks in the future than the Hakko.
+`Needle-nose pliers <http://amzn.to/28XBmtM>`_
+  For inserting parts, bending wires, holding nuts.
+`Multimeter <http://amzn.to/28Yq2ju>`_
+  Critical for testing the circuits, and measuring/calibrating the output current. Pick one that can handle currents up to at least 1 A (most do up to 10 A).
+`Alligator leads <http://www.taydaelectronics.com/alligator-clips-10-pieces-bundle.html>`_
+  Useful for connecting the multimeter to wires; also double as clamps for soldering.
+  
+General assembly tools
+**********************
+
+`Crimper <http://amzn.to/28SVrSA>`_
+  Even with a small dome, you'll be crimping hundreds of Dupont pins, male and female. Technically you could do this with a pair of pliers, but after 50 or so crimps with pliers (and with multiple failures), you will start praying for death. These take a bit of practice, but once you get the hang of them, they’re pretty easy to use.
+Electric drill, drill bits
+  No link for this one, hopefully you have one of these or know someone with one. Largest hole you may have to drill is 1/2" diameter.
+`1/8" acrylic drill <http://amzn.to/28TmqLF>`_
+  Acrylic plastic is a pain to drill with regular bits; you'll get lots of chipping, grabbing, and even breaking. This bit has a special design to help eliminate these issues. For larger holes, you can use regular bits after creating a started with this one; just gradually use bits of increasing size until you get to the final size.
+Random tools (screwdriver, file, saw, etc.)
+  A whole bunch of random tools that you may need, but are pretty common.
+`Silicone adhesive <http://amzn.to/28XBAks>`_
+  Used for attaching LEDs to the dome. You won't need a lot of it.
+`Safety glasses <>`_
+  'Nuff said.
+
+Optional, but helpful
+^^^^^^^^^^^^^^^^^^^^^
+
+`Head magnifier <http://amzn.to/28SVrSP>`_
+  If you have young, good eyes, you may not need this. My eyes are old and decrepit, so this magnifier makes soldering and other fine work possible.
+`Solder sucker <http://amzn.to/28UZRHK>`_ / solder wick <http://amzn.to/28TjPRT>`_
+  If you're a master solderer and never make mistakes, you may not need these <>`_
+  they help fix soldering problems by removing solder. I have both :). Check this `video <https://www.youtube.com/watch?v=N_dvf45hN6Y>`_ for more info.
+`Flux <>`_
+  Love this stuff; makes soldering problem connections a lot easier. Cleans off with rubbing alcohol.
+`Dremel or other rotary tool <http://amzn.to/2ayZ84W>`_
+  Primarily useful for cutting holes in the controller enclosure, as well as general cutting/sanding/filing/milling. You can do all this stuff with other tools as well, it may just take longer.
+`Heat gun <http://amzn.to/28ZNy02>`_
+  Used for heat-shrink tubing in this build, special flexible tubing that shrinks when heated to insulate/protect/reinforce wire connections. I don't have a heat gun, but use a hair dryer on the hottest setting put right next to the heat shrink tubing; works, but a bit slow. A lighter or candle flame works on heat shrink tubing as well, as long as you're careful not to melt the tubing or set it on fire.
+`Anti-static wrist strap <http://amzn.to/29zNCRJ>`_
+  Static discharge is bad in general for electronics, and the P-channel MOSFETs in particular are very static-sensitive. This wrist strap offers a level of protection from static discharge.
+`Step drill (aka Unibit) <http://amzn.to/2azgtYJ>`_
+  The 1/8" acrylic drill listed above will be good enough for most of the holes you need to drill. However, there are a couple of holes in the dome that will need to be a bit larger. You can drill these by starting with the acrylic drill, and then gradually increasing the size of the drill bit you use until you reach the final size. If you skip too quickly to a larger size, you risk cracking or breaking the dome. A step drill has a conical shape with gradually increasing bit sizes in a single bit <>`_
+  you start with a smaller size, and gradually work your way up to a larger size. I've used these often on acrylic plastic, and as long as you start with a pre-drilled hole, you shouldn't have problems with cracking/breakage as long as you don't apply too much pressure while drilling.
+  
+I may think of more tools as I write up the build, watch this space.
