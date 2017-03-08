@@ -1,9 +1,9 @@
 Quantity	Component name	Link to sample part	Alternate Source	Comments
 1	Acrylic dome with flange	See https://hackaday.io/project/11951/log/39222-under-the-dome and https://hackaday.io/project/11951/log/39533-more-dome-stuff for more info on choosing a dome.		
-1	Flat black spray paint for plastic	http://amzn.to/28U2jSy or http://www.homedepot.com/p/Rust-Oleum-Painter-s-Touch-2X-12-oz-Flat-Black-General-Purpose-Spray-Paint-249127/202246266 or equivalent. Make sure it has a "flat" or "matte" finish, and is compatible with plastic.		
-64	Cree 3W star white LEDs, neutral white or cool white (48 for domes 12-14"D, 56 for domes 15-17"D, 64 for domes >= 18"D)	http://www.ledsupply.com/leds/cree-xlamp-xpe2-white-high-power-led or equivalent		
+1	Flat black spray paint for plastic	http://amzn.to/28U2jSy or http://www.homedepot.com/p/Rust-Oleum-Painter-s-Touch-2X-12-oz-Flat-Black-General-Purpose-Spray-Paint-249127/202246266 or equivalent. Make sure it has a ''flat'' or ''matte'' finish, and is compatible with plastic.		
+64	Cree 3W star white LEDs, neutral white or cool white (48 for domes 12-14''D, 56 for domes 15-17''D, 64 for domes >= 18''D)	http://www.ledsupply.com/leds/cree-xlamp-xpe2-white-high-power-led or equivalent		
 1	Round black reflective sphere	http://www.ebay.com/itm/Loose-Ceramic-Balls-12mm-G5-Quality-Si3N4-Silicon-Nitride-Bearing-Balls-/130823636164?hash=item1e75b244c4 or equivalent		Any shiny black sphere will do, e.g. black marble or ball bearing dipped in ink. Must be at least 250 pixels in diameter in photograph taken with dome, so larger domes may require larger spheres (e.g. black pool balls, obsidian spheres).
 1	2mm heat shrink tubing (about 5 ft.)	http://www.taydaelectronics.com/hardware/cable-wire/heat-shrink-tubing-20cm-1-5mm-black.html,http://www.ebay.com/itm/2mm-Heat-Shrink-Tubing-Shrinkable-Tubing-3-Meters-for-One-Price-Free-Shipping-/371661410591 or equivalent		
 1	Cat5e 24 AWG Ethernet patch cable (positive voltage => red)	http://www.monoprice.com/product?p_id=11359 or equivalent		7 ft. recommended, 5 ft. OK.
 1	Cat5e 24 AWG Ethernet patch cable (ground connection => your choice of color)	http://www.monoprice.com/product?p_id=11360 or equivalent		7 ft. recommended, 5 ft. OK.
-1	Package 4" cable/zip ties	Color to match dome; http://amzn.to/28LRf9q or equivalent		
+1	Package 4'' cable/zip ties	Color to match dome; http://amzn.to/28LRf9q or equivalent		
