@@ -82,29 +82,31 @@ Once you’ve modified whatever constants you need to, upload the program to the
 
 A quick visual review of the controls/jacks on various panels of the control box:
 
-Front
+
 
 .. figure:: ../figures/calibration/calibration_1.jpg
    :align: center
    :width: 8cm
-
-Right
+   
+   Front
 
 .. figure:: ../figures/calibration/calibration_2.jpg
    :align: center
    :width: 8cm
-
-Rear
+   
+   Right
 
 .. figure:: ../figures/calibration/calibration_3.jpg
    :align: center
    :width: 8cm
-
-Left
+   
+   Rear
 
 .. figure:: ../figures/calibration/calibration_4.jpg
    :align: center
    :width: 8cm
+   
+   Left
 
 Disconnect the USB cable in the jack on the left panel connecting the Arduino to your computer, as it’s not necessary. If you haven’t already, connect the positive and ground cables from the LED dome to the control box (“red to the rear”, “close to the ground”). Now plug in your 9-12V 2A+ DC power supply into the jack on the left. If the Sound switch is on, you should hear 3 rising tones. 
 

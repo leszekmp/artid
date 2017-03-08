@@ -1,5 +1,5 @@
-Assembling the RTI-Mage control box
-===================================
+Assembling the control box
+==========================
 
 The big addition I made to the RTIMage controller in my latest generation is a small OLED display (0.96”width, 128 x 64 pixels, maximum 8 lines x 21 characters per line). While it’s entirely optional, I highly recommend including it in your build. It gives instant feedback on the system parameters, and lets you know the status of progress during an RTI photography run. But there’s a bit of prep you need to do in order to properly install and use it.
 

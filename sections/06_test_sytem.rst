@@ -156,6 +156,9 @@ A couple of points here:
 4. I used some hot glue to glue the wires in place so that they wouldn’t pull out by accident, and I’d recommend that once you’ve tested the connector to make sure it’s working properly, you use some kind of glue to do the same. When inserting or removing this connector, never pull it out by the wires – always pull on the connector.
 5. If you can’t find an 8-pin 2.54mmm single row female pin header, you can use 8 1-pin female Dupont connectors, one for each wire. It’ll be a bit of a pain as you’ll have to connect each of the 8 wires individually to the MOSFET driver board, but it can be done.
 
+Test of the electronics and LEDs
+--------------------------------
+
 Now that you’ve got all the cables done, it’s time for the big test of the electronics and LEDs.
 
 Connect the Arduino Mega to your PC with the USB cable, and upload the testing program System_tester.ino into the Arduino Mega controller using the Arduino IDE; you’ll find that program in the Files section. Disconnect from the cable when done.

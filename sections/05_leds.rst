@@ -1,5 +1,5 @@
-Preparing the Star LEDs for installation in the dome
-====================================================
+Preparing the LEDs for installation
+===================================
 
 When you receive your 3W LEDs in standard star packages, they'll like show up attached together, like this:
  

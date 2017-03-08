@@ -1,5 +1,5 @@
-Design Considerations, or A Design History
-==========================================
+Design History
+==============
 
 This is just a quick explanation of how I came up with the basic LED lighting and control system I use in my RTI system. You might find it useful in understanding how things work, and I hope it's not too technical; but you don't have to understand this to build the system.
 

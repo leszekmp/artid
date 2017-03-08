@@ -1,5 +1,5 @@
-Installing and wiring the LEDs inside the dome
-==============================================
+Installing and wiring the LEDs
+==============================
 
 Once you’ve tested all the LEDs, it’s time to put them in the dome. But there is one final consideration. The interior of the dome was painted flat black to minimize light scattering. But you’re about to install LEDs that are mostly white in color, and will scatter light quite effectively. I calculated that for the 12” dome I’m building here, the 48 LEDs will cover about 10% of the total area inside the dome, which could lead to quite a bit of scattered light. To reduce that, I paint the LEDs with a non-conductive flat black paint:
 
@@ -147,8 +147,7 @@ The last lead will be a short one at the bottom, which you’ll be connecting to
    Some of the upcoming pictures will show the + leads bent down towards the bottom, like this:
 
    .. image:: ../figures/led_wiring/led_wiring_21.jpg
-      :align: middle
-      :width: 6cm
+      width: 6cm
 	  
 	  **DON’T DO THIS!!!**
 	  
