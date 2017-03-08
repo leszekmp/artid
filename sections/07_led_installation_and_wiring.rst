@@ -148,10 +148,10 @@ The last lead will be a short one at the bottom, which you’ll be connecting to
 
    .. image:: ../figures/led_wiring/led_wiring_21.jpg
       :align: middle
-      :width: 8cm
-   
-   **DON’T DO THIS!!!**
-   
+      :width: 6cm
+	  
+	  **DON’T DO THIS!!!**
+	  
    I had an idea that this would make the wiring a bit easier. I was wrong, and ultimately wound up bending them back. Just leave the + LED leads as straight as they were when you glued the LEDs inside the dome – it makes the wiring a lot easier.
 
 Let’s start with the rows. You’re going to have to connect 8 pieces of wire together, 7 bridging the 8 LEDs in the row, and the last one leading down to a hole you drilled near the base in the previous step (it’s the hole at right in the picture above). What length should the wire be? The wire length will depend on the size of the dome, and the number of columns in the row. 

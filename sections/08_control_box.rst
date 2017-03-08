@@ -37,18 +37,20 @@ This OLED panel communicates with the Arduino using the I2C/IIC serial bus (Inte
 
 Plug your Arduino into your PC with a USB cable, and upload the I2C scanner program using the Arduino IDE (see the earlier Arduino setup instructions for info on how to install and configure the Arduino IDE). Apparently nothing happens. Not true – the program is scanning every possible I2C address to look for devices, and if it finds one, it sends that information back through the USB cable. To see that info, go to the Tools menu in the Arduino IDE, and select Serial Monitor. A window will pop up, and eventually you will see something like this:
 
-  I2C Scanner
-  Scanning...
-  I2C device found at address 0x3C  !
-  done
+.. code-block:: none
 
-  Scanning...
-  I2C device found at address 0x3C  !
-  done
+   I2C Scanner
+   Scanning...
+   I2C device found at address 0x3C  !
+   done
+
+   Scanning...
+   I2C device found at address 0x3C  !
+   done
  
-  Scanning...
-  I2C device found at address 0x3C  !
-  done
+   Scanning...
+   I2C device found at address 0x3C  !
+   done
 
 This will go on forever if you let it. So the I2C address of my display was 0x3C.
 

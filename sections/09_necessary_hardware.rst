@@ -914,7 +914,7 @@ The IR remote cable is simplicity itself. The positive and ground wires from a U
 
 .. figure:: ../figures/hardware/hardware_111.jpg
    :align: center
-   :width: 8cm
+   :width: 4cm
 
 Strip the insulation off the cut wire end, revealing four wires: red, black, green and white:
 

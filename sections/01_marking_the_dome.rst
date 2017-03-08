@@ -11,7 +11,7 @@ By now, you've hopefully read the previous section on how to select a dome, have
 
 .. figure:: ../figures/dome/dome_white.jpg
    :align: center
-   :scale: 30%
+   :width: 8cm
    
    Not exactly like this one - I've already marked the LED positions and painted the inside. But I'll use it as a model for this section.
 
@@ -19,13 +19,13 @@ When construction is completed, and all the LEDs installed, the inside of the do
 
 .. figure:: ../figures/dome/dome_interior_48_led.jpg
    :align: center
-   :scale: 70%
+   :width: 8cm
    
    Interior of 12" diameter dome, with 48 LEDs
 
 .. figure:: ../figures/dome/dome_interior_64_led.jpg
    :align: center
-   :scale: 70%
+   :width: 8cm
    
    Interior of 18" diameter dome, with 64 LEDs
 
