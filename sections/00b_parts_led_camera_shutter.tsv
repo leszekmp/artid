@@ -1,0 +1,23 @@
+Type	Quantity	Component name	Link to sample part	Alternate Source	Comments
+Canon / CHDK	1	USB cable for Canon camera + extension if needed	For use with Canon cameras and CHDK to trigger shutter		
+IR remote capability	1	940 nm IR LED for IR remote capability	http://www.taydaelectronics.com/review/product/list/id/2707/category/224/ or equivalent		
+IR remote capability	1	100R 1/2 W resistor for above IR LED 	http://www.taydaelectronics.com/resistors/1-2w-carbon-film-resistors/10-x-resistor-100-ohm-1-2w-5-carbon-film-pkg-of-10.html		
+IR remote capability	1	USB cable for IR LED			
+IR remote capability	1	Prototyping board	http://www.taydaelectronics.com/hardware/prototyping-boards/prototyping-board-120x80mm.html		
+Computer interface	1	Adafruit Bluefruit EZ-Key Bluetooth HID adapter for computer interface (optional).	http://amzn.to/1PyAU8b		
+Hard-wired remote	1	4N35 optoisolato	http://www.taydaelectronics.com/4n35-optocouplers-phototransistor-30v-ic.html or equivalent		
+Hard-wired remote	1	150R resistor for optocoupler	http://www.taydaelectronics.com/resistors/1-2w-carbon-film-resistors/10-x-resistor-150-ohm-1-2w-5-carbon-film-pkg-of-10.html		
+Hard-wired remote	1	USB cable for wired remote			
+Hard-wired remote	1	Connector plug for hard-wired remote	See http://www.doc-diy.net/photo/remote_pinout/ for more info		
+Hard-wired remote	1	Prototyping board	http://www.taydaelectronics.com/hardware/prototyping-boards/prototyping-board-120x80mm.html		
+Servo shutter controller	2	Mini-jumper for two pins	http://www.taydaelectronics.com/mini-jumper-2-54mm-gold-plated-closed-cover.html or equivalent		
+Simple stand hardware	4	6" sections of 1" wooden dowel			
+Simple stand hardware	4	1/4-20 threaded brass inserts			
+Simple stand hardware	4	1/4-20 1" bolts with washers			
+Simple stand hardware	1	Flat wooden board that dome will fit on			
+Simple stand hardware	4	1" sections of 1/2" wooden dowel			
+Simple stand hardware	1	Foam rubber for bottom of dowel legs			
+Misc	1	Miscellaneous hardware for stand (wood, bolts, nuts, washers, screws)	Depends on the kind of stand you want to build for the system		
+Misc	1	Lab jack (useful for positioning objects) (optional)	http://www.amazon.com/dp/B00657ZK02/ref=biss_dp_t_asn or equivalent		
+Misc	1	X-Y microscope stage (optional - useful for positioning objects for high-mag macro or USB microscopy)	http://www.aliexpress.com/item/Brand-New-Add-on-X-Y-Mechanical-Stage-for-Compound-Microscope-free-shipping/451547128.html or equivalent		
+Misc	1	Glass microscope slides (for use with optional X-Y stage above)			

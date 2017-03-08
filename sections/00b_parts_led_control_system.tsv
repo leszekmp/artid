@@ -1,0 +1,43 @@
+Quantity	Component name	Link to sample part	Alternate Source	Comments
+1	Arduino Mega 2560 R3 Controller	http://amzn.to/1U2LvHi or equivalent. Older non-R3 acceptable.		
+1	9-12V DC Power Supply (9V recommended)	http://amzn.to/28Li9hN or equivalent; 2A minimum current capability, Arduino-compatible jack (center-positive, 5.5mm x 2.1mm)		
+1	Battery power supply (6 AA alkaline) (optional)	http://www.dx.com/p/6-x-aa-batteries-holder-case-w-power-plug-for-arduino-152198#.V2mO1rjyuUk or equivalent		
+1	Battery power supply (8 AA NiMH) (optional)	http://www.dx.com/p/diy-12v-8-x-aa-batteries-case-box-holder-for-arduino-black-382125#.V5wfBrgrKUk or equivalent.		
+1	Arduino Mega protoshield	http://amzn.to/1U2KAXn or equivalent.		
+1	11 x 8.5 cm protoboard	http://www.dx.com/p/double-sided-glass-fibre-pcb-prototype-board-for-arduino-11-x-8-5cm-148584#.V1SUkZErKUl or equivalent		
+2	10K linear taper potentiometer	http://www.taydaelectronics.com/10k-ohm-linear-taper-potentiometer-spline-shaft-solder-lugs.html or equivalent		
+2	Potentiometer knobs	http://www.taydaelectronics.com/potentiometer-variable-resistors/knobs-29/black-plastic-knob-with-white-pointer.html or equivalent		
+2	Momentary pushbutton switch (red)	http://www.taydaelectronics.com/electromechanical/switches-key-pad/push-button/pb-11d02-push-button-panel-mount-spst-no-pb-11d02-th1r00.html or equivalent		
+1	Momentary pushbutton switch (black)	http://www.taydaelectronics.com/electromechanical/switches-key-pad/push-button/pb-11d02-push-button-panel-mount-spst-no-pb-11d02-th1-00.html or equivalent.		
+3	Toggle switches	http://www.taydaelectronics.com/mini-toggle-switch-spdt-on-on.html or equivalent		
+1	3mm red LED Power indicator	 http://www.taydaelectronics.com/leds/round-leds/3mm-leds/red/led-3mm-red.html or equivalent.		
+1	LED holder For above LED;	 http://www.taydaelectronics.com/leds/led-holders-bezels/3mm-bezel-led-holder-chrome-metal.html or equivalent.		
+1	USB Female A Panel Connector	http://www.aliexpress.com/item/2pcs-lot-5pin-to-USB-female-Panel-Mount-extension-Cable-for-desktop-pc-motherboard-with-screws/2038580033.html or equivalent	http://amzn.to/2dksEwi, https://www.startech.com/Cables/USB-2.0/Internal-and-Panel-Mount/1-ft-Panel-Mount-USB-Cable-USB-A-to-Motherboard-Header-Cable-Female-to-Female~USBPNLAFHD1	
+2	Ethernet Panel Connector	http://www.ebay.com/itm/171414912765?_trksid=p2059210.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT or equivalent	https://www.adafruit.com/product/909, http://amzn.to/2drP8aE	
+1	RJ-45 Jack	http://www.digikey.com/product-detail/en/54602-908LF/609-1046-ND/1001360 or equivalent.		
+1	RJ-45 breakout board	http://www.digikey.com/product-detail/en/sparkfun-electronics/BOB-00716/1568-1097-ND/5318739 or equivalent		
+8	CAT4101 LED Driver	http://www.digikey.com/product-detail/en/CAT4101TV-T75/CAT4101TV-T75CT-ND/1933886 or equivalent.		
+8	Protoboard Adapter for 5-Pin D2	http://www.digikey.com/product-detail/en/33115/33115CA-ND/272911 or equivalent.	http://www.proto-advantage.com/store/product_info.php?products_id=2400046	
+1	100 uF 35V capacitor	http://www.taydaelectronics.com/capacitors/electrolytic-capacitors/100uf-35v-105c-radial-electrolytic-capacitor-6x11mm.htmlor equivalent.		
+8	0.1 uF ceramic disc capacitor	http://www.taydaelectronics.com/capacitors/ceramic-disc-capacitors/10-x-0-1uf-50v-ceramic-disc-capacitor-pkg-of-863.htmlor equivalent		
+9	560R 1/4W 1% resistors	http://www.taydaelectronics.com/resistors/1-4w-metal-film-resistors/10-x-resistor-560-ohm-1-4w-1-metal-film-pkg-of-10.html or equivalent		
+16	10K-ohm 1/4W 1% resistors	http://www.taydaelectronics.com/resistors/1-4w-metal-film-resistors/10-x-resistor-10k-ohm-1-4w-1-metal-film-pkg-of-10.html or equivalent		
+8	IRF9540N P-Channel Power MOSFET	http://www.taydaelectronics.com/irf9540-irf9540n-power-mosfet-p-channel-23a-100v.html or equivalent (any low Rds P-Channel Power MOSFET is fine)		
+8	2N3904 NPN general purpose transistor	http://www.taydaelectronics.com/2n3904-npn-general-propose-transistor.html or equivalent		
+8	5K trim potentiometer	http://www.taydaelectronics.com/5k-ohm-trimmer-potentiometer-cermet-25-turns-3296w.html or equivalent; needs to be this shape.		
+1	Power strip protoboard	http://www.taydaelectronics.com/hardware/prototyping-boards/small-stripboard-94x53mm-copper.html or equivalent		
+1	Piezoelectric buzzer	http://www.taydaelectronics.com/buzzers/piezo-electronic-tone-buzzer-alarm-1-5-28v-pcb.html or equivalent.		
+8	7mm x 7mm to 10mm x 10mm heat sinks	http://www.ebay.com/itm/10pcs-7mm-x-7mm-x-3-5mm-Aluminum-Adhesive-Heatsink-For-IC-Chipset-Cooling-/221809077484 or http://www.ebay.com/itm/New-High-Quality-10pcs-10x10x10mm-adhesive-Aluminum-Heat-Sink-For-Memory-Chip-IC-/400926756093 or http://www.ebay.com/itm/261474050126?_trksid=p2055119.m1438.l2649&ssPageName=STRK%3AMEBIDX%3AIT or equivalent		
+1	20-pin 2.54mm single row right angle female pin header	http://www.taydaelectronics.com/connectors-sockets/pin-headers/20-pin-2-54-mm-single-row-ringht-angle-female-pin-header.html or equivalent		
+1	20-pin 2.54mm right angle single row pin header (break 40-pin in half)	http://www.taydaelectronics.com/connectors-sockets/pin-headers/40-pin-2-54-mm-angle-single-row-pin-header.html or equivalent (break 40-pin in half)		
+3	2-pin 2.54 mm single row female pin header	http://www.taydaelectronics.com/connectors-sockets/pin-headers/2-pin-2-54-mm-single-row-female-pin-header.html or equivalent		
+1	40-pin 2.54mm single row pin header strip	http://www.taydaelectronics.com/connectors-sockets/pin-headers/40-pin-2-54-mm-single-row-pin-header-strip.html or equivalent		
+2	8-pin 2.54mm single row female pin header	http://www.taydaelectronics.com/connectors-sockets/pin-headers/8-pin-2-54-mm-single-row-female-pin-header.html or equivalent		
+2	3-pin or 4-pin 2.54mm single row female pin header	http://www.taydaelectronics.com/connectors-sockets/pin-headers/4-pin-2-54-mm-single-row-female-pin-header.html or equivalent		
+1	Dupont wire jumper 8-Pin header connector housing	http://www.ebay.com/itm/10x-Dupont-Wire-Jumper-Pin-Header-Connector-Housing-1x8-Male-Female-/141355537702,https://www.pololu.com/product/1907 or equivalent		
+1	10 ft black AWG 22 solid hook-up wire	http://www.taydaelectronics.com/awg-22-black-hook-up-wire-1ft-30cm-solid.html or equivalent		
+1	10 ft red AWG 22 solid hook-up wire	http://www.taydaelectronics.com/awg-22-red-hook-up-wire-1ft-30cm-solid.html or equivalent		
+1	200 pairs male/female Dupont crimp pins and headers (400 pieces in all)	2 of http://www.ebay.com/itm/200pcs-Male-Female-Pins-2-54mm-Long-Dupont-Head-Reed-Terminal-Plug-/262364253211or equivalent		
+200	Dupont female connector housings (1P)	http://www.ebay.com/itm/100pcs-Dupont-Jumper-Wire-Cable-Housing-Connector-2-54mm-1P-2P-3P-4P-10P-Header-/322111342896 pr equivalent; 1P only!		
+1	100 ft. black Kynar insulated 24 AWG wire (more for domes 24" in D)	http://amzn.to/2d4rFei or equivalent	http://www.digikey.com/product-detail/en/R24BLK-0100/K516-ND/80619	
+1	0.96" OLED I2C display (optional but recommended)	 http://amzn.to/2de8NwK or equivalent		
