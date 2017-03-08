@@ -867,36 +867,45 @@ Controlling the camera shutter
 
 For creating an RTI dataset, you first need to acquire a set of photos taken at different lighting angles – that’s what the RTI-Mage system is for. It lets you take up to 64 photos at different lighting angles, which can be processed into an RTI data file. There are a number of ways that the RTI-Mage allows synchronization of the camera shutter with each individual LED light at a different angle:
 
-* Manual: For cameras that don’t have any remote capability supported by the RTI-Mage. The LED lights and shutter are advanced manually.
-* Automatic: A number of modes support automatic shutter triggering in synchronization with the LED lights, including
-* CHDK: RTI-Mage supports cameras that can run the Canon Hacker’s Development Kit through a USB cable connection, using the Remote Parameters settings.
-* IR Remote: RTI-Mage supports Canon, Nikon, Sony, Pentax, Olympus and Minolta cameras that have an IR remote capability, using a custom-built cable.
-* Wired remote: RTI-Mage can support some cameras with wired remote connectors, using a custom built cable.
-* Bluetooth: Using the Adafruit Bluetooth HID module, RTI-Mage can support cameras that are controlled by computer software. Examples would include USB microscopes and Canon/Nikon cameras that use manufacturer’s custom software.
-* Servo: For cameras that don’t support any other remote mode, a small servo can be used to mechanically depress the shutter automatically. **NOT YET SUPPORTED – I’M WORKING ON IT**.
+Manual
+  For cameras that don’t have any remote capability supported by the RTI-Mage. The LED lights and shutter are advanced manually.
+Automatic
+  A number of modes support automatic shutter triggering in synchronization with the LED lights, including
+CHDK
+  RTI-Mage supports cameras that can run the Canon Hacker’s Development Kit through a USB cable connection, using the Remote Parameters settings.
+IR Remote
+  RTI-Mage supports Canon, Nikon, Sony, Pentax, Olympus and Minolta cameras that have an IR remote capability, using a custom-built cable.
+Wired remote
+  RTI-Mage can support some cameras with wired remote connectors, using a custom built cable.
+Bluetooth
+  Using the Adafruit Bluetooth HID module, RTI-Mage can support cameras that are controlled by computer software. Examples would include USB microscopes and Canon/Nikon cameras that use manufacturer’s custom software.
+Servo
+  For cameras that don’t support any other remote mode, a small servo can be used to mechanically depress the shutter automatically. **NOT YET SUPPORTED – I’M WORKING ON IT**.
 
 Here’s some more information about each mode.
 
 Manual
-******
+^^^^^^
 This mode is for those whose camera does not support any of the automatic modes listed below; the Mode switch will need to be in the manual position. In this mode, an LED is lit manually with a press of the Action button, and stays on long enough to allow you to press the camera shutter button manually to take the picture. If the light goes off before you press the shutter, you can turn it back on with the WB button. When the photo is shot, press the Action button to advance to the next LED in the sequence. For good results, the camera and dome will need to be stably/firmly mounted in place, so that neither moves when the shutter is pressed. Otherwise, the RTI imagery may be a bit blurred, though it may be difficult to see that.
 
 Automatic
-**********
+^^^^^^^^^^^^
 
 There are a number of automatic mode options for the RTI-Mage system; which one you use depends on which kind of camera you have. Some of them require either special software installed on the camera or a computer, or a special cable to be used; these section will describe how to configure each camera/cable as required.
   
 CHDK
-****
+^^^^^^
 
-CHDK (the Canon Hackers Development Kit) is custom firmware for many Canon cameras that can be temporarily loaded from the SD card to the camera, and allows remote triggering of the shutter through the standard mini-USB connector. You can find more information about CHDK at its wiki page (http://chdk.wikia.com/wiki/CHDK), including a list of compatible cameras and installation info. Note that the wiki has many sections that are out of date. Also note that many recent Canon cameras do not work with CHDK – check the list of compatible cameras at the wiki to see if yours is. eBay or the Canon refurb store are good sources for older, CHDK-compatible Canon cameras.
+CHDK (the Canon Hackers Development Kit) is custom firmware for many Canon cameras that can be temporarily loaded from the SD card to the camera, and allows remote triggering of the shutter through the standard mini-USB connector. You can find more information about CHDK at its `wiki page <http://chdk.wikia.com/wiki/CHDK>`_, including a list of compatible cameras and installation info. Note that the wiki has many sections that are out of date. Also note that many recent Canon cameras do not work with CHDK – check the list of compatible cameras at the wiki to see if yours is. eBay or the Canon refurb store are good sources for older, CHDK-compatible Canon cameras.
   
-The simplest way to install CHDK on your Canon camera’s SD card is to use the STICK utility (http://www.zenoshrdlu.com/stick/stick.html). Note that STICK can’t reformat cards in exFAT format to the required FAT32 format, and Windows won’t let you format cards larger than 32 GB in FAT32. However, the STICK page does link to several utilities that can re-format 64 GB and larger cards to FAT32. Once you’ve installed CHDK on the SD card on your computer, set it in write-protect format, insert it into your camera, then turn the power on. You should see a boot message for CHDK on your camera’s screen. Use the buttons for your camera model to access the Main Menu for CHDK- these may differ from model to model. On my Canon S110 and SX260, pressing the Play button briefly, then the Menu button, takes you to the Main Menu for CHDK. Once there, go to CHDK Settings, then select Remote Parameters. Turn on Enable Remote, set Switch Type to OnePush, and Control Mode to Quick. Exit out of the CHDK menu, and your camera is now set to fire the shutter when it receives a voltage pulse over a USB cable plugged into the USB Shutter jack on the RTI-Mage control box on one end, and the mini-USB jack plugged into the camera at the other end. The RTI-Mage camera mode will need to be set to Auto, and the Shutter mode set to USB. Once that’s done, starting the photography cycle in Auto mode will turn on one LED, fire the camera shutter, then turn off the LED and advance to the next LED for the same cycle.
+The simplest way to install CHDK on your Canon camera’s SD card is to use the `STICK utility <http://www.zenoshrdlu.com/stick/stick.html>`_. Note that STICK can’t reformat cards in exFAT format to the required FAT32 format, and Windows won’t let you format cards larger than 32 GB in FAT32. However, the STICK page does link to several utilities that can re-format 64 GB and larger cards to FAT32. Once you’ve installed CHDK on the SD card on your computer, set it in write-protect format, insert it into your camera, then turn the power on. You should see a boot message for CHDK on your camera’s screen. Use the buttons for your camera model to access the Main Menu for CHDK- these may differ from model to model.
+
+On my Canon S110 and SX260, pressing the Play button briefly, then the Menu button, takes you to the Main Menu for CHDK. Once there, go to CHDK Settings, then select Remote Parameters. Turn on Enable Remote, set Switch Type to OnePush, and Control Mode to Quick. Exit out of the CHDK menu, and your camera is now set to fire the shutter when it receives a voltage pulse over a USB cable plugged into the USB Shutter jack on the RTI-Mage control box on one end, and the mini-USB jack plugged into the camera at the other end. The RTI-Mage camera mode will need to be set to Auto, and the Shutter mode set to USB. Once that’s done, starting the photography cycle in Auto mode will turn on one LED, fire the camera shutter, then turn off the LED and advance to the next LED for the same cycle.
   
 This is as good a place as any to mention a possible quirk with Canon cameras. When I upgraded my Canon camera from an older 8 megapixel model to a 12 megapixel one, I was surprised to find that some of my RTI imagery with the new camera looked blurrier than with the old camera. What’s more, it wasn’t consistent – sometimes it would be pin-sharp, other times not so much. Drove me crazy, but I finally figured it out. When you first turn on the Canon camera and set a zoom level, successive pictures show a slight “drift” in the pixel location from picture to picture, a maximum distance of about 7 pixels. You don’t see that when you take regular photographs because it’s a trivial amount, and you have no reference for it. RTI combines results from multiple photographs, though, so such a small drift can have a visible impact on the results. This appears to be hardware issue, as I’ve seen it with two different Canon cameras, but not a third. There’s no solid fix, but there is a workaround. The pixel drift seems to settle out after about 30 pictures, so I shoot a set of dummy pictures first; subsequent picture sets show no signs of drift. Keep in mind that if you change the zoom level, or turn the camera off then on again, you’ll have to shoot another set of dummy pictures to fix this issue.
 
 IR-remote
-*********
+^^^^^^^^^
 
 For the IR remote, the RTI-Mage controller supports Sebastian Setz’s Arduino library for `camera IR remote control <http://sebastian.setz.name/arduino/my-libraries/multi-camera-ir-control/>`_. 
 
@@ -964,7 +973,7 @@ To use this IR remote with a compatible camera and the RTI-Mage controller:
 That should be it. Once that’s done, starting the photography cycle in Auto mode will turn on one LED, fire the camera shutter, then turn off the LED and advance to the next LED for the same cycle.
 
 Wired remote connection
-***********************
+^^^^^^^^^^^^^^^^^^^^^^^
 
 A wired remote connection can be created for those cameras that support it. However, unless the camera doesn’t support IR remote capability, I would recommend you use the IR option. A single IR cable can support multiple camera modes, but unfortunately just about every camera maker has a proprietary plug/jack for their wired remote. There’s a full set of pictures and pin-outs at the `Camera Remote Release Pinout list <http://www.doc-diy.net/photo/remote_pinout/>`_, which will give you a feeling for how complicated it can be.
 
@@ -1055,7 +1064,7 @@ To use this remote cable with the RTI-Mage:
 That should be it. Once that’s done, starting the photography cycle in Auto mode will turn on one LED, fire the camera shutter, then turn off the LED and advance to the next LED for the same cycle.
 
 Bluetooth
-*********
+^^^^^^^^^
 
 For Bluetooth, the camera shutter controlled via a computer program is fired using the Adafruit Bluetooth HID module. This is useful for USB microscopes, and Canon/Nikon cameras operated remotely via proprietary software.
 
@@ -1119,7 +1128,7 @@ My other USB microscope doesn’t have a keyboard command to capture an image; i
 The delay(LED_Pause_Time) command introduces a short delay between turning on the LED and enabling the EZ-Key. I found that without this, the program might only capture part of the image. This constant is set in the top of the program, and you can tune it to whatever value works for you. You’ll also have to experiment with LED and Delay times to find the optimal setting for your application.
 
 Servo
-******
+^^^^^^
 
 A control system to fire the shutter mechanically using a rotating arm. This isn’t ready yet, hope to work on it shortly. If you’d like to try making this work on your own, start by cutting a standard USB cable to leave the USB A connector intact. Strip off the cable insulation to reveal the four wires:
 
