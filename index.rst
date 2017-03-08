@@ -18,3 +18,4 @@ Affordable Reflectance Transformation Imaging Dome
    sections/07_led_installation_and_wiring.rst
    sections/08_control_box.rst
    sections/09_necessary_hardware.rst
+   sections/10_calibration_and_operation.rst
