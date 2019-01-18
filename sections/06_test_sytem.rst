@@ -43,7 +43,7 @@ These lines specify the display resolution used by the library. Two slashes in f
 
 Save the file, and you’re probably done with that library for now (with one minor possibility that you’ll have to go change one other OLED parameter, but I’ll get to that in a future step).
 
-There’s one more library you’ll need to install, but this one isn’t in the Library Manager. This is the *multiCameraIrControl* library written by Sebastian Setz, and available `here <http://sebastian.setz.name/arduino/my-libraries/multi-camera-ir-control/>`_.
+There’s one more library you’ll need to install, but this one isn’t in the Library Manager. This is the *multiCameraIrControl* library written by Sebastian Setz. Sebastian's original site is now down, but you can retrieve it from the files section on the Hackaday project page (Creative Commons license, so no problems with doing this).
 
 This library is needed to control the wireless IR remote shutter capability of the system, which works with cameras from Canon, Nikon, Sony, Olympus, Pentax or Minolta that have an IR sensor. Download the zip file from the site above, and unzip the folder *multiCameraIrControl* into the libraries subfolder of the Arduino folder. Restart the Arduino program, and that library is ready to go.
 
